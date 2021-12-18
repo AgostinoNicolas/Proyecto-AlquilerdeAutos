@@ -1,0 +1,126 @@
+/* VISTA HEADER MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    /* HEADER MOBILE */
+    li{
+        display: block;
+        list-style-type: none ;
+        padding: 5px;
+        &:hover{
+            background:map-get($colors,first );
+        }
+        a{
+            text-decoration: none;
+            color: map-get($colors,first );
+            font-size: 20px;
+            font-family: "romatica";
+            display: block;
+        }
+        a:hover{
+            text-decoration: none;
+            color: map-get($colors,second );
+        }
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: map-get($colors,second );
+        .headerLogo{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .imgLogo{
+                height: 80px;
+            }
+        }
+        .headerNav{
+            display: inline;
+            text-align: center;
+        }
+    }
+    /* FIN HEADER MOBILE */
+    /* BARRA DE LLAMADAS MOBILE*/
+     .bar{
+        background-color: map-get($colors,first );
+        border-top: 2px solid map-get($colors,second );
+        width: 100%;
+        box-shadow: 0 1px 8px 0;;
+        .barText{
+            display: none;
+            justify-content: end;
+            font-size: 13px;
+            color: map-get($colors,second );
+            margin: 0px 10px 0px 0px;
+            box-sizing: border-box;
+        }
+    }
+    /* FIN BARRA DE LLAMADAS MOBILE */
+}
+/* VISTA HEADER DESKTOP */
+@media only screen and (min-width: 1024px) {
+    /* HEADER DESKTOP */
+    li{
+        display: inline-block;
+        list-style-type: none;
+        padding: 20px;
+        transition: 0.8s;
+        &:hover{
+            transform: translateY(-6px);}
+        a{
+            text-decoration: none;
+            color: map-get($colors,first );
+            font-size: 20px;
+            font-family: "romatica";
+            transition: 0.5s;
+            }
+        &:hover{
+            color: map-get($colors,third );
+        }
+        a:hover{
+            color: map-get($colors,third );
+            text-decoration-line: overline;
+            text-decoration-color: map-get($colors,first );
+
+        }
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background: map-get($colors,second );
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 110px;
+        .logo{
+            height: 110px;
+        }
+    }
+    /* FIN HEADER DESKTOP */
+    /* BARRA DE LLAMADAS DESKTOP */
+    .bar{
+        background-color: map-get($colors,first );
+        border-top: 2px solid map-get($colors,second );
+        height: 22px;
+        box-shadow: 0 1px 8px 0;
+        .barText{
+            display: flex;
+            justify-content: end;
+            font-size: 13px;
+            color: map-get($colors,second );
+            margin: 0px 10px 0px 0px;
+            align-items: center;
+            padding: 5px 0px 0px 0px;
+            height: 12px;
+            a{
+                text-decoration: none;  
+                margin-left: 10px;
+                .fa-whatsapp{
+                    color: map-get($colors,second );
+                }
+            } 
+        }    
+    }        
+     /* FIN BARRA DE LLAMADAS INDEX PAGE DESKTOP */
+}
+/* FIN VISTA DESKTOP */

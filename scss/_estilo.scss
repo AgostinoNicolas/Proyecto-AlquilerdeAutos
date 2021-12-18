@@ -1,0 +1,111 @@
+
+$colors:(
+    first:#00c2cb,
+    second:#313e50,
+    third:white,
+    fourth:#4a4a4a
+    );
+
+ @mixin marginLR($margin-left,$margin-right){
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+ }
+    
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background:#e5e5e5;
+    color:  map-get($colors,fourth );
+    font-size: 14px;
+    font-family: "romatica";
+}
+.textCenter{
+    text-align: center;
+}
+.subtitulo{
+    font-size: 14px;
+    color: map-get($colors,second );
+    text-transform: uppercase;
+}
+.subtitulo--marginbotton{
+    @extend .subtitulo;
+    margin-bottom: 10px;
+}
+
+.secundaryText{
+    margin: 0px 40px 40px 40px;
+    padding: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+.textParagraph{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.boxText{
+    margin: 10px 30px 10px 30px;
+}        
+.marg5{
+    margin-left: 5px;
+}
+.margTop5{
+    margin-top: 5px;
+}
+.imgCenter{
+    margin: 20px;
+    justify-content: center;
+}
+.fa-whatsapp{
+    font-size: 22px;
+}
+.fa-envelope{
+    font-size: 18px;
+}
+
+.fa-cc-visa{
+    font-size: 18px;
+}
+.fa-cc-mastercard{
+    font-size: 18px;
+}
+.fa-cc-amex{
+    font-size: 18px;
+}
+.fa-facebook-square{
+    font-size: 22px;
+}
+.fa-instagram{
+    font-size: 22px;
+}
+.fa-caret-right{
+    color: map-get($colors,first);
+}
+.fa-check-circle{
+    color: map-get($colors,first);  
+}
+.fa-plane-departure{
+    font-size: 25px;
+    color: map-get($colors,first);
+    margin-bottom: 10px;
+}
+.fa-money-bill-alt{
+    font-size: 25px;
+    color: map-get($colors,first);
+    margin-bottom: 10px;
+}
+.fa-phone-volume{
+    font-size: 25px;
+    color: map-get($colors,first);
+    margin-bottom: 10px;
+}
+
+h2,h3,h4{
+    font-size: 15px;
+}
+@font-face {
+    font-family: "romatica";
+    src: url(../assets/font/Romanica.ttf);
+}

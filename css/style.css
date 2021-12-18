@@ -1,0 +1,1038 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  background: #e5e5e5;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-family: "romatica"; }
+
+.textCenter {
+  text-align: center; }
+
+.subtitulo, .subtitulo--marginbotton {
+  font-size: 14px;
+  color: #313e50;
+  text-transform: uppercase; }
+
+.subtitulo--marginbotton {
+  margin-bottom: 10px; }
+
+.secundaryText {
+  margin: 0px 40px 40px 40px;
+  padding: 10px;
+  text-align: center;
+  line-height: 18px; }
+
+.textParagraph {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px; }
+
+.boxText {
+  margin: 10px 30px 10px 30px; }
+
+.marg5 {
+  margin-left: 5px; }
+
+.margTop5 {
+  margin-top: 5px; }
+
+.imgCenter {
+  margin: 20px;
+  justify-content: center; }
+
+.fa-whatsapp {
+  font-size: 22px; }
+
+.fa-envelope {
+  font-size: 18px; }
+
+.fa-cc-visa {
+  font-size: 18px; }
+
+.fa-cc-mastercard {
+  font-size: 18px; }
+
+.fa-cc-amex {
+  font-size: 18px; }
+
+.fa-facebook-square {
+  font-size: 22px; }
+
+.fa-instagram {
+  font-size: 22px; }
+
+.fa-caret-right {
+  color: #00c2cb; }
+
+.fa-check-circle {
+  color: #00c2cb; }
+
+.fa-plane-departure {
+  font-size: 25px;
+  color: #00c2cb;
+  margin-bottom: 10px; }
+
+.fa-money-bill-alt {
+  font-size: 25px;
+  color: #00c2cb;
+  margin-bottom: 10px; }
+
+.fa-phone-volume {
+  font-size: 25px;
+  color: #00c2cb;
+  margin-bottom: 10px; }
+
+h2, h3, h4 {
+  font-size: 15px; }
+
+@font-face {
+  font-family: "romatica";
+  src: url(../assets/font/Romanica.ttf); }
+
+/* VISTA MOBILE  */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /* GRID CONTAINER INDEX PAGE MOBILE */
+  main {
+    display: grid;
+    grid-template-areas: "gridHeaderIndex" "gridEncabezado" "gridCotizar" "gridText" "gridSobreNosotros" "gridFooterIndex";
+    grid-template-rows: 280px 10px 140px 750px 170px 226px 1fr;
+    grid-template-columns: 100%; }
+    main header .gridHeaderIndix {
+      grid-area: headerindex; }
+    main section .gridEncabezado {
+      grid-area: gridencabezado; }
+    main section .gridCotizar {
+      grid-area: gridcotizar; }
+    main section .gridText {
+      grid-area: gridText; }
+    main section .gridSobreNosotros {
+      grid-area: gridsobrenosotros; }
+    main footer .gridFooterIndex {
+      grid-area: footerindex; }
+  /* GRID CONTAINER REQUISITOS PAGE MOBILE */
+  .gridRequisitosPage {
+    display: grid;
+    grid-template-areas: "header" "gridHeaderBar" "gridCondicionesAlquiler" "gridCargosAdicionales" "gridCotizarAhora" "gridFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 280px 10px 1280px 130px 160px 1fr; }
+    .gridRequisitosPage .gridRequisitosPage header {
+      grid-area: header; }
+    .gridRequisitosPage .gridRequisitosPage .gridHeaderBar {
+      grid-area: gridHeaderBar; }
+    .gridRequisitosPage .gridRequisitosPage .gridCondicionesAlquiler {
+      grid-area: gridCondicionesAlquiler; }
+    .gridRequisitosPage .gridRequisitosPage .gridCotizarAhora {
+      grid-area: gridCotizarAhora; }
+    .gridRequisitosPage .gridRequisitosPage .gridFooter {
+      grid-area: gridFooter; }
+  /* FIN GRID CONTAINER REQUISITOS PAGE MOBILE */
+  /* GRID CONTAINER VEHÍCULOS PAGE MOBILE */
+  .gridVehiculoPage {
+    display: grid;
+    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridBoxCar" "gridCotizarAhora" "gridFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 280px 10px 80px 830px 160px 360px 1fr; }
+    .gridVehiculoPage .gridVehiculosPage header {
+      grid-area: header; }
+    .gridVehiculoPage .gridVehiculosPage .gridHeaderBar {
+      grid-area: gridHeaderBar; }
+    .gridVehiculoPage .gridVehiculosPage .gridEncabezado {
+      grid-area: gridEncabezado; }
+    .gridVehiculoPage .gridVehiculosPage .gridBoxCar {
+      grid-area: gridBoxCar; }
+    .gridVehiculoPage .gridVehiculosPage .gridCotizarAhora {
+      grid-area: gridCotizarAhora; }
+    .gridVehiculoPage .gridVehiculosPage .gridFooter {
+      grid-area: gridFooter; }
+  /* FIN GRID CONTAINER VEHÍCULOS PAGE MOBILE */
+  /* GRID CONTAINER SERVICIOS PAGE MOBILE */
+  .gridServiciosPage {
+    display: grid;
+    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridServicios" "gridServiciosInformativo" "gridCotizarAhora" "gridFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 280px 10px 110px 380px 400px 160px 1fr; }
+    .gridServiciosPage .gridServiciosPage header {
+      grid-area: header; }
+    .gridServiciosPage .gridServiciosPage .gridHeaderBar {
+      grid-area: gridHeaderBar; }
+    .gridServiciosPage .gridServiciosPage .gridEncabezado {
+      grid-area: gridEncabezado; }
+    .gridServiciosPage .gridServiciosPage .gridServicios {
+      grid: gridServicios; }
+    .gridServiciosPage .gridServiciosPage .gridServiciosInformativo {
+      grid-area: gridServiciosInformativo; }
+    .gridServiciosPage .gridServiciosPage .gridCotizarAhora {
+      grid-area: gridCotizarAhora; }
+    .gridServiciosPage .gridServiciosPage .gridFooter {
+      grid-area: gridFooter; }
+  /* FIN CONTAINER SERVICIOS PAGE MOBILE */
+  /* GRID CONTAINER CONTACTO MOBILE */
+  .gridContactoPage {
+    display: grid;
+    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridFormularioUbicacion" "gridCotizarAhora" "gridFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 280px 10px 80px 810px 160px 1fr; }
+    .gridContactoPage .gridContactoPage header {
+      grid-area: header; }
+    .gridContactoPage .gridContactoPage .gridHeaderBar {
+      grid-area: gridHeaderBar; }
+    .gridContactoPage .gridContactoPage .gridEncabezado {
+      grid-area: gridEncabezado; }
+    .gridContactoPage .gridContactoPage .gridFormularioUbicacion {
+      grid-column: gridFormularioUbicacion; }
+    .gridContactoPage .gridContactoPage .gridCotizarAhora {
+      grid-area: gridCotizarAhora; }
+    .gridContactoPage .gridContactoPage .gridFooter {
+      grid-area: gridFooter; }
+  /* FIN GRID CONTAINER CONTACTO MOBILE */ }
+
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1024px) {
+  /* GRID CONTAINER INDEX PAGE DESTOP */
+  main {
+    display: grid;
+    grid-template-areas: "gridHeaderIndex" "gridHeaderBar" "gridEncabezado" "gridCotizar" "gridText" "gridSobreNosotros" "gridFooterIndex";
+    grid-template-rows: 110px 20px 150px 390px 60px 370px 1fr;
+    grid-template-columns: 100%; }
+    main header .gridHeaderIndix {
+      grid-area: headerindex; }
+    main section .gridHeaderBar {
+      grid-area: headerbar; }
+    main section .gridHeaderBar {
+      grid-area: headerbar; }
+    main section .gridEncabezado {
+      grid-area: gridencabezado; }
+    main section .gridCotizar {
+      grid-area: gridcotizar; }
+    main section .gridText {
+      grid-area: gridText; }
+    main section .gridSobreNosotros {
+      grid-area: gridsobrenosotros; }
+    main footer .gridFooterIndex {
+      grid-area: footerindex; }
+  /* FIN GRID CONTAINER INDEX PAGE DESKTOP */
+  /* GRID CONTAINER REQUISITOS PAGE DESKTOP */
+  .gridRequisitosPage {
+    display: grid;
+    grid-template-areas: "header" "gridHeaderBar" "gridCondicionesAlquiler" "gridCargosAdicionales" "gridCotizarAhora" "gridFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 20px 520px 120px 110px 1fr; }
+    .gridRequisitosPage .gridRequisitosPage header {
+      grid-area: header; }
+    .gridRequisitosPage .gridRequisitosPage .gridHeaderBar {
+      grid-area: gridHeaderBar; }
+    .gridRequisitosPage .gridRequisitosPage .gridCondicionesAlquiler {
+      grid-area: gridCondicionesAlquiler; }
+    .gridRequisitosPage .gridRequisitosPage .gridCotizarAhora {
+      grid-area: gridCotizarAhora; }
+    .gridRequisitosPage .gridRequisitosPage .gridFooter {
+      grid-area: gridFooter; }
+  /* FIN GRID CONTAINER REQUISITOS PAGE DESKTOP */
+  /* GRID CONTAINER VEHICULOS PAGE DESKTOP */
+  .gridVehiculoPage {
+    display: grid;
+    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridBoxCar" "gridCotizarAhora" "gridFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 20px 70px 700px 110px 1fr; }
+    .gridVehiculoPage .gridVehiculoPage header {
+      grid-area: header; }
+    .gridVehiculoPage .gridVehiculoPage .gridHeaderBar {
+      grid-area: gridHeaderBar; }
+    .gridVehiculoPage .gridVehiculoPage .gridEncabezado {
+      grid-area: gridEncabezado; }
+    .gridVehiculoPage .gridVehiculoPage .gridBoxCar {
+      grid-area: gridBoxCar; }
+    .gridVehiculoPage .gridVehiculoPage .gridCotizarAhora {
+      grid-area: gridCotizarAhora; }
+    .gridVehiculoPage .gridVehiculoPage .gridFooter {
+      grid-area: gridFooter; }
+  /* FIN GRID CONTAINER VEHICULOS PAGE DESKTOP */
+  /* GRID CONTAINER SERVICIOS PAGE DESKTOP */
+  .gridServiciosPage {
+    display: grid;
+    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridServicios" "gridServiciosInformativo" "gridCotizarAhora" "gridFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 20px 70px 150px 150px 110px 1fr; }
+    .gridServiciosPage .gridServiciosPage header {
+      grid-area: header; }
+    .gridServiciosPage .gridServiciosPage .gridHeaderBar {
+      grid-area: gridHeaderBar; }
+    .gridServiciosPage .gridServiciosPage .gridEncabezado {
+      grid-area: gridEncabezado; }
+    .gridServiciosPage .gridServiciosPage .gridServicios {
+      grid: gridServicios; }
+    .gridServiciosPage .gridServiciosPage .gridServiciosInformativo {
+      grid-area: gridServiciosInformativo; }
+    .gridServiciosPage .gridServiciosPage .gridCotizarAhora {
+      grid-area: gridCotizarAhora; }
+    .gridServiciosPage .gridServiciosPage .gridFooter {
+      grid-area: gridFooter; }
+  /* FIN CONTAINER SERVICIOS PAGE DESKTOP */
+  /* GRID CONTAINER CONTACTO DESKTOP */
+  .gridContactoPage {
+    display: grid;
+    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridFormularioUbicacion" "gridCotizarAhora" "gridFooter";
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 20px 60px 480px 110px 1fr; }
+    .gridContactoPage .gridContactoPage header {
+      grid-area: header; }
+    .gridContactoPage .gridContactoPage .gridHeaderBar {
+      grid-area: gridHeaderBar; }
+    .gridContactoPage .gridContactoPage .gridEncabezado {
+      grid-area: gridEncabezado; }
+    .gridContactoPage .gridContactoPage .gridFormularioUbicacion {
+      grid-column: gridFormularioUbicacion; }
+    .gridContactoPage .gridContactoPage .gridCotizarAhora {
+      grid-area: gridCotizarAhora; }
+    .gridContactoPage .gridContactoPage .gridFooter {
+      grid-area: gridFooter; }
+  /* FIN GRID CONTAINER CONTACTO DESKTOP */ }
+
+/* VISTA HEADER MOBILE */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /* HEADER MOBILE */
+  li {
+    display: block;
+    list-style-type: none;
+    padding: 5px; }
+    li:hover {
+      background: #00c2cb; }
+    li a {
+      text-decoration: none;
+      color: #00c2cb;
+      font-size: 20px;
+      font-family: "romatica";
+      display: block; }
+    li a:hover {
+      text-decoration: none;
+      color: #313e50; }
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #313e50; }
+    header .headerLogo {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      header .headerLogo .imgLogo {
+        height: 80px; }
+    header .headerNav {
+      display: inline;
+      text-align: center; }
+  /* FIN HEADER MOBILE */
+  /* BARRA DE LLAMADAS MOBILE*/
+  .bar {
+    background-color: #00c2cb;
+    border-top: 2px solid #313e50;
+    width: 100%;
+    box-shadow: 0 1px 8px 0; }
+    .bar .barText {
+      display: none;
+      justify-content: end;
+      font-size: 13px;
+      color: #313e50;
+      margin: 0px 10px 0px 0px;
+      box-sizing: border-box; }
+  /* FIN BARRA DE LLAMADAS MOBILE */ }
+
+/* VISTA HEADER DESKTOP */
+@media only screen and (min-width: 1024px) {
+  /* HEADER DESKTOP */
+  li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+    transition: 0.8s; }
+    li:hover {
+      transform: translateY(-6px); }
+    li a {
+      text-decoration: none;
+      color: #00c2cb;
+      font-size: 20px;
+      font-family: "romatica";
+      transition: 0.5s; }
+    li:hover {
+      color: white; }
+    li a:hover {
+      color: white;
+      text-decoration-line: overline;
+      text-decoration-color: #00c2cb; }
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: #313e50;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px; }
+    header .logo {
+      height: 110px; }
+  /* FIN HEADER DESKTOP */
+  /* BARRA DE LLAMADAS DESKTOP */
+  .bar {
+    background-color: #00c2cb;
+    border-top: 2px solid #313e50;
+    height: 22px;
+    box-shadow: 0 1px 8px 0; }
+    .bar .barText {
+      display: flex;
+      justify-content: end;
+      font-size: 13px;
+      color: #313e50;
+      margin: 0px 10px 0px 0px;
+      align-items: center;
+      padding: 5px 0px 0px 0px;
+      height: 12px; }
+      .bar .barText a {
+        text-decoration: none;
+        margin-left: 10px; }
+        .bar .barText a .fa-whatsapp {
+          color: #313e50; }
+  /* FIN BARRA DE LLAMADAS INDEX PAGE DESKTOP */ }
+
+/* FIN VISTA DESKTOP */
+/* VISTA INDEX MOBILE*/
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /* ENCABEZADO MOBILE INDEX PAGE */
+  .gridEncabezado .boxEncabezado {
+    margin: 10px 10px 10px 10px;
+    padding: 5px;
+    text-align: center; }
+    .gridEncabezado .boxEncabezado h1 {
+      font-size: 25px;
+      color: #313e50;
+      padding-bottom: 10px;
+      text-transform: uppercase; }
+    .gridEncabezado .boxEncabezado .span1 {
+      font-size: 15px;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+      color: #00c2cb; }
+    .gridEncabezado .boxEncabezado p {
+      font-size: 14px;
+      padding: 10px; }
+  /* FIN ENCABEZADO MOBILE INDEX PAGE */
+  /* COTIZAR MOBILE INDEX PAGE */
+  .gridCotizar {
+    /* BOX FLEX COTIZAR MOBILE INDEX PAGE */ }
+    .gridCotizar .flexCotizar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 700px; }
+      .gridCotizar .flexCotizar .boxCotizar {
+        display: flex;
+        padding: 5px;
+        background-color: #313e50;
+        border-radius: 6px;
+        border: 2px solid #00c2cb;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 0 1px 8px 0; }
+        .gridCotizar .flexCotizar .boxCotizar .boxCotizarContenido {
+          padding: 15px;
+          font-size: 12px;
+          display: block;
+          color: #00c2cb; }
+          .gridCotizar .flexCotizar .boxCotizar .boxCotizarContenido .boxCotizarContenidoP {
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase; }
+  /* FIN BOX FLEX COTIZAR MOBILE INDEX PAGE */
+  /* FLEX SOLICITAR COTIZACION MOBILE INDEX PAGE */
+  .flexSolicitarCotizacion {
+    display: flex;
+    direction: row;
+    width: 100%;
+    justify-content: center; }
+    .flexSolicitarCotizacion .boxSolicitarCotizacion {
+      text-align: center;
+      background-color: #00c2cb;
+      font-size: 12px;
+      color: #313e50;
+      border-radius: 6px;
+      width: 60%;
+      padding: 10px;
+      text-transform: uppercase;
+      box-shadow: 0 1px 8px 0; }
+      .flexSolicitarCotizacion .boxSolicitarCotizacion .span2 {
+        color: white; }
+  /* FIN FLEX SOLICITAR COTIZACION MOBILE INDEX PAGE */
+  /* FIN COTIZAR MOBILE INDEX PAGE */
+  /* PARALLAX MOBILE */
+  .parallax {
+    background-image: url(../assets/img/Chevrolet-Onix-2020-4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 16em;
+    border-top: 1px solid #00c2cb;
+    border-bottom: 1px solid #00c2cb; }
+  /* FIN PARALLAX MOBILE INDEX PAGE */
+  /* SOBRE NOSOTROS MOBILE INDEX PAGE */
+  .flexSobreNosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    /* FIN SOBRE NOSOTROS MOBILE INDEX PAGE */ }
+    .flexSobreNosotros .textSobreNosotros {
+      font-size: 13px;
+      line-height: 15px;
+      width: 100%; }
+    .flexSobreNosotros .boxItems {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px; }
+      .flexSobreNosotros .boxItems .item {
+        text-transform: uppercase;
+        color: #313e50;
+        font-size: 14px;
+        padding-top: 15px; } }
+
+/* FIN VISTA MOBILE INDEX PAGE */
+/* VISTA DESKTOP INDEX PAGE */
+@media only screen and (min-width: 1024px) {
+  /* ENCABEZADO DESKTOP INDEX PAGE */
+  .gridEncabezado .boxEncabezado {
+    margin: 20px 20px 0px 20px;
+    padding: 5px;
+    text-align: center; }
+    .gridEncabezado .boxEncabezado h1 {
+      font-size: 30px;
+      color: #313e50;
+      padding-bottom: 10px;
+      text-transform: uppercase; }
+    .gridEncabezado .boxEncabezado .span1 {
+      font-size: 20px;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+      color: #00c2cb; }
+    .gridEncabezado .boxEncabezado p {
+      font-size: 16px;
+      padding: 10px; }
+  /* FIN DE ENCABEZADO DESKTOP INDEX PAGE */
+  /* COTIZAR DESKTOP INDEX PAGE */
+  .gridCotizar {
+    /* BOX FLEX COTIZAR DESKTOP INDEX PAGE */
+    /* FIN BOX FLEX COTIZAR DESKTOP INDEX PAGE */
+    /* FLEX SOLICITAR COTIZACION DESKTOP INDEX PAGE */
+    /* FIN FLEX SOLICITAR COTIZACION DESKTOP INDEX PAGE */ }
+    .gridCotizar .flexCotizar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .gridCotizar .flexCotizar .boxCotizar {
+        display: flex;
+        margin: 10px;
+        padding: 5px;
+        background-color: #313e50;
+        border-radius: 6px;
+        border: 2px solid #00c2cb;
+        height: 240px;
+        width: 350px;
+        justify-content: center;
+        box-shadow: 0 1px 8px 0; }
+        .gridCotizar .flexCotizar .boxCotizar .boxCotizarContenido {
+          padding: 15px;
+          font-size: 15px;
+          display: block;
+          color: #00c2cb; }
+          .gridCotizar .flexCotizar .boxCotizar .boxCotizarContenido .boxCotizarContenidoP {
+            font-size: 22px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: uppercase; }
+    .gridCotizar .flexSolicitarCotizacion {
+      display: flex;
+      direction: row;
+      width: 100%;
+      justify-content: center;
+      margin: 30px 0px 0px 0px; }
+      .gridCotizar .flexSolicitarCotizacion .boxSolicitarCotizacion {
+        text-align: center;
+        background-color: #00c2cb;
+        font-size: 20px;
+        color: #313e50;
+        border-radius: 6px;
+        width: 300px;
+        padding: 10px;
+        text-transform: uppercase;
+        box-shadow: 0 1px 8px 0; }
+        .gridCotizar .flexSolicitarCotizacion .boxSolicitarCotizacion .span2 {
+          color: white; }
+      .gridCotizar .flexSolicitarCotizacion .boxSolicitarCotizacion:hover {
+        text-align: center;
+        background-color: #313e50;
+        font-size: 20px;
+        color: #00c2cb;
+        border-radius: 6px;
+        width: 300px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        transform: scale(1.05, 1.05);
+        transition: 0.6s; }
+  /* FIN COTIZAR DESKTOP INDEX PAGE */
+  /* PARALLAX DESKTOP INDEX PAGE */
+  .parallax {
+    background-image: url(../assets/img/Chevrolet-Onix-2020-4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 25em;
+    border-top: 1px solid #00c2cb;
+    border-bottom: 1px solid #00c2cb; }
+  /* FIN PARALLAX DESKTOP INDEX PAGE */
+  /* SOBRE NOSOTROS DESKTOP INDEX PAGE */
+  .flexSobreNosotros {
+    display: flex;
+    direction: row;
+    width: 100%; }
+    .flexSobreNosotros .textSobreNosotros {
+      font-size: 14px;
+      line-height: 16px;
+      width: 70%; }
+    .flexSobreNosotros .boxItems {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      width: 30%; }
+      .flexSobreNosotros .boxItems .item {
+        text-transform: uppercase;
+        color: #313e50;
+        font-size: 17px; }
+  /* FIN SOBRE NOSOTROS DESKTOP INDEX PAGE */ }
+
+/* FIN VISTA INDEX DESKTOP */
+/* VISTA MOBILE REQUISITOS PAGE  */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /* CONDICONES ALQUILER Y REQUISITOS MOBILE REQUISITOS PAGE */
+  .flexCondicionesAlquiler {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%; }
+    .flexCondicionesAlquiler .textCondicionesAlquiler {
+      font-size: 14px;
+      line-height: 18px; }
+    .flexCondicionesAlquiler .boxRequisitos h3 {
+      margin-left: 10px; }
+    .flexCondicionesAlquiler .boxRequisitos .boxBorde {
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 15px;
+      border-radius: 6px;
+      border: 2px solid #00c2cb;
+      box-shadow: 0 1px 8px 0; }
+  /* FIN CONDICONES ALQUILER Y REQUISITOS MOBILE REQUISITOS PAGE */
+  /* CARGOS ADICIONALES REQUISITOS PAGE */
+  .boxCargosAdicionales {
+    margin: 10px;
+    justify-content: left; }
+  /* FIN CARGOS ADICIONALES REQUISITOS PAGE */ }
+
+/* FIN VISTA MOBILE REQUISITOS PAGE  */
+/* VISTA DESKTOP REQUISITOS PAGE */
+@media only screen and (min-width: 1024px) {
+  /* CONDICONES ALQUILER Y REQUISITOS DESKTOP REQUISITOS PAGE */
+  .flexCondicionesAlquiler {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%; }
+    .flexCondicionesAlquiler .textCondicionesAlquiler {
+      font-size: 14px;
+      line-height: 18px; }
+    .flexCondicionesAlquiler .boxRequisitos {
+      margin: 20px; }
+      .flexCondicionesAlquiler .boxRequisitos .boxBorde {
+        margin-top: 5px;
+        padding: 15px;
+        border-radius: 6px;
+        border: 2px solid #00c2cb;
+        box-shadow: 0 1px 8px 0; }
+  /* FIN CONDICIONES ALQUILER Y REQUISITOS DESKTOP REQUISITOS PAGE */
+  /* CARGOS ADICIONALES REQUISITOS PAGE */
+  .boxCargosAdicionales {
+    margin: 10px;
+    justify-content: left; }
+  /* FIN CARGOS ADICIONALES REQUISITOS PAGE */ }
+
+/* FIN VISTA DESKTOP REQUISITOS PAGE  */
+/* VISTA MOBILE VEHÍCULOS PAGE  */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /* BOXCAR MOBILE VEHÍCULOS PAGE */
+  .flexBoxCar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%; }
+  .boxCar {
+    color: #00c2cb;
+    text-align: center; }
+    .boxCar .car {
+      margin: 10px;
+      padding: 5px;
+      background-color: #313e50;
+      border-radius: 6px;
+      border: 2px solid #00c2cb;
+      width: 90%;
+      height: 215px;
+      box-shadow: 0 1px 8px 0; }
+      .boxCar .car .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 200px; }
+        .boxCar .car .box .textCar {
+          font-size: 18px;
+          padding: 5px;
+          margin: 5px; }
+        .boxCar .car .box .imgBoxCar {
+          height: 110px; }
+        .boxCar .car .box .flexIcon {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around; }
+          .boxCar .car .box .flexIcon div {
+            margin-left: 5px;
+            margin-right: 5px; }
+  .buttonCarCotizar {
+    display: inline-block;
+    margin: 5px 20px 5px 20px;
+    padding: 3px 15px 3px 15px;
+    background: #00c2cb;
+    color: #313e50;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 6px; }
+  /* FIN BOXCAR MOBILE VEHÍCULOS PAGE */ }
+
+/* FIN VISTA MOBILE VEHÍCULOS PAGE  */
+/* VISTA DESKTOP VEHÍCULOS PAGE */
+@media only screen and (min-width: 1024px) {
+  /* BOXCAR DESKTOP VEHÍCULOS PAGE */
+  .flexBoxCar {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto; }
+  .boxCar {
+    color: #00c2cb;
+    width: 80%; }
+    .boxCar .car {
+      margin: 10px;
+      padding: 5px;
+      background-color: #313e50;
+      border-radius: 6px;
+      border: 2px solid #00c2cb;
+      height: 190px;
+      box-shadow: 0 1px 8px 0; }
+      .boxCar .car .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 175px; }
+        .boxCar .car .box .textCar {
+          font-size: 20px;
+          text-align: left;
+          padding: 5px;
+          margin: 5px; }
+        .boxCar .car .box .flexImgBoxCar {
+          display: flex;
+          justify-content: center; }
+          .boxCar .car .box .flexImgBoxCar .imgBoxCar {
+            height: 140px; }
+        .boxCar .car .box .flexIcon {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap; }
+    .boxCar .buttonCarCotizar {
+      display: flex;
+      justify-content: center; }
+      .boxCar .buttonCarCotizar p {
+        margin: 5px 20px 5px 20px;
+        padding: 3px 15px 3px 15px;
+        background: #00c2cb;
+        color: #313e50;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 15px;
+        border-radius: 6px;
+        box-shadow: 0 1px 8px 0; }
+        .boxCar .buttonCarCotizar p:hover {
+          color: white;
+          transform: scale(1.05, 1.05);
+          transition: 0.6s; }
+  /* FIN BOXCAR DESKTOP VEHÍCULOS PAGE */ }
+
+/* FIN VISTA DESKTOP VEHÍCULOS PAGE */
+/* VISTA MOBILE SERVICIOS PAGE  */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .gridServicios .flexServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 320px; }
+    .gridServicios .flexServicios .bordeServicios {
+      padding: 10px;
+      border-radius: 6px;
+      border: 2px solid #00c2cb;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 15px;
+      box-shadow: 0 1px 8px 0; } }
+
+/* FIN VISTA MOBILE SERVICIOS PAGE  */
+/* VISTA DESKTOP SERVICIOS PAGE */
+@media only screen and (min-width: 1024px) {
+  .gridServicios .flexServicios {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; }
+    .gridServicios .flexServicios .bordeServicios {
+      border-radius: 6px;
+      border: 2px solid #00c2cb;
+      width: 25%;
+      padding: 15px;
+      box-shadow: 0 1px 8px 0; } }
+
+/* FIN VISTA DESKTOP SERVICIOS PAGE */
+/* VISTA MOBILE CONTACTO PAGE  */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .gridFormularioUbicacion .boxFormulario {
+    margin: 10px;
+    padding: 20px;
+    color: #00c2cb;
+    background-color: #313e50;
+    border-radius: 6px;
+    border: 2px solid #00c2cb;
+    box-shadow: 0 1px 8px 0;
+    height: 680px; }
+    .gridFormularioUbicacion .boxFormulario .flexFormulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 710px; }
+      .gridFormularioUbicacion .boxFormulario .flexFormulario .map {
+        width: 100%;
+        border-radius: 6px; } }
+
+/* FIN VISTA MOBILE CONTACTO PAGE  */
+/* VISTA DESKTOP CONTACTO PAGE  */
+@media only screen and (min-width: 1024px) {
+  .gridFormularioUbicacion .boxFormulario {
+    margin: 10px 30px 10px 30px;
+    padding: 20px;
+    color: #00c2cb;
+    background-color: #313e50;
+    border-radius: 6px;
+    border: 2px solid #00c2cb;
+    width: 80%;
+    box-shadow: 0 1px 8px 0; }
+    .gridFormularioUbicacion .boxFormulario .flexFormulario {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+    .gridFormularioUbicacion .boxFormulario .map {
+      border-radius: 6px; } }
+
+/* FIN VISTA DESKTOP CONTACTO PAGE  */
+/* VISTA MOBILE FOOTER */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  /*  COTIZAR AHORA MOBILE  */
+  .boxCotizarAhora {
+    padding: 20px;
+    background-color: #00c2cb;
+    box-shadow: 0 1px 8px 0; }
+    .boxCotizarAhora .buttonCotizarAhora {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: right;
+      color: #00c2cb;
+      margin-right: 30px;
+      text-transform: uppercase; }
+      .boxCotizarAhora .buttonCotizarAhora a {
+        font-size: 10px;
+        background: #313e50;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 6px;
+        color: #00c2cb;
+        text-decoration: none; }
+  /* FIN COTIZAR AHORA MOBILE */
+  /* MOBILE FOOTER */
+  footer {
+    font-size: 18px;
+    width: 100%;
+    background-color: #4a4a4a;
+    color: #00c2cb; }
+    footer a {
+      font-size: 15px;
+      text-decoration: none;
+      color: #00c2cb; }
+    footer .footerLogo {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      footer .footerLogo .logoSmall {
+        width: 231px;
+        height: 90px; }
+  .flexFooter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around; }
+    .flexFooter .boxFooter {
+      padding: 10px;
+      font-size: 16px; }
+      .flexFooter .boxFooter p {
+        font-size: 17px; }
+      .flexFooter .boxFooter .boxFooterContactanos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 5px; }
+        .flexFooter .boxFooter .boxFooterContactanos .contacto {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .flexFooter .boxFooter .boxFooterContactanos .contacto p {
+            margin-left: 5px;
+            font-size: 15px; }
+      .flexFooter .boxFooter .boxFooterAceptamos {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 5px; }
+      .flexFooter .boxFooter .boxFooterSeguinos {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 5px; }
+    .flexFooter .copyR {
+      display: block;
+      font-size: 12px;
+      text-align: center;
+      margin: 0px 10px 10px 10px;
+      padding: 0px 10px 0px 10px;
+      border-top: 1px solid #838282; }
+  /* FIN MOBILE FOOTER */ }
+
+/* FIN VISTA MOBILE FOOTER */
+/* VISTA DESKTOP FOOTER */
+@media only screen and (min-width: 1024px) {
+  /*  COTIZAR AHORA DESKTOP  */
+  .boxCotizarAhora {
+    padding: 20px;
+    background-color: #00c2cb;
+    box-shadow: 0 1px 8px 0; }
+    .boxCotizarAhora .buttonCotizarAhora {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end;
+      margin-right: 50px;
+      text-transform: uppercase; }
+      .boxCotizarAhora .buttonCotizarAhora a {
+        text-decoration: none;
+        font-size: 10px;
+        background: #313e50;
+        color: #00c2cb;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 6px;
+        box-shadow: 0 1px 8px 0; }
+        .boxCotizarAhora .buttonCotizarAhora a:hover {
+          color: white;
+          transform: scale(1.05, 1.05);
+          transition: 0.6s; }
+  /* FIN COTIZAR AHORA DESKTOP  */
+  /* DESKTOP FOOTER */
+  footer {
+    font-size: 18px;
+    width: 100%;
+    background-color: #4a4a4a;
+    color: #00c2cb; }
+    footer a {
+      margin-left: 5px;
+      font-size: 15px;
+      text-decoration: none;
+      color: #00c2cb; }
+  .flexFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .flexFooter .footerLogo {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+      .flexFooter .footerLogo .logoSmall {
+        width: 230px;
+        height: 100px; }
+    .flexFooter .boxFooter {
+      padding: 20px; }
+      .flexFooter .boxFooter p {
+        font-size: 17px; }
+      .flexFooter .boxFooter .boxFooterContactanos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        .flexFooter .boxFooter .boxFooterContactanos .contacto {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .flexFooter .boxFooter .boxFooterContactanos .contacto a {
+            margin-left: 5px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #00c2cb; }
+      .flexFooter .boxFooter .boxFooterAceptamos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5px; }
+      .flexFooter .boxFooter .boxFooterSeguinos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5px; }
+    .flexFooter .copyR {
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      margin: 5px 10px 10px 10px;
+      padding: 5px 10px 0px 10px;
+      border-top: 1px solid #838282; }
+  /* FIN DESKTOP FOOTER */ }
+
+/* FIN VISTA DESKTOP FOOTER */

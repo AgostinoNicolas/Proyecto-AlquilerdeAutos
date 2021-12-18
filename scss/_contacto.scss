@@ -1,0 +1,52 @@
+/* VISTA MOBILE CONTACTO PAGE  */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .gridFormularioUbicacion{
+        .boxFormulario{
+            margin: 10px;
+            padding: 20px;
+            color: map-get($colors,first );
+            background-color: map-get($colors,second );
+            border-radius: 6px;
+            border: 2px solid map-get($colors,first );
+            box-shadow: 0 1px 8px 0;
+            height: 680px;
+            .flexFormulario{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 710px;
+                .map{
+                    width: 100%;
+                    border-radius: 6px;
+                }
+             }
+         }
+    }
+}
+/* FIN VISTA MOBILE CONTACTO PAGE  */
+
+/* VISTA DESKTOP CONTACTO PAGE  */
+@media only screen and (min-width: 1024px) {
+    .gridFormularioUbicacion{
+        .boxFormulario{
+            margin: 10px 30px 10px 30px;
+            padding: 20px;
+            color: #00c2cb;
+            background-color: map-get($colors,second );
+            border-radius: 6px;
+            border: 2px solid map-get($colors,first );
+            width: 80%;
+            box-shadow: 0 1px 8px 0;
+            .flexFormulario{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+             .map{
+                border-radius: 6px;
+            }
+        }
+    }
+}
+/* FIN VISTA DESKTOP CONTACTO PAGE  */
