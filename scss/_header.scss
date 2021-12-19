@@ -12,7 +12,7 @@
             text-decoration: none;
             color: map-get($colors,first );
             font-size: 20px;
-            font-family: "romatica";
+            font-family: "poppins";
             display: block;
         }
         a:hover{
@@ -70,7 +70,8 @@
             text-decoration: none;
             color: map-get($colors,first );
             font-size: 20px;
-            font-family: "romatica";
+            font-family: "poppins";
+            font-weight: 900;
             transition: 0.5s;
             }
         &:hover{
@@ -101,7 +102,7 @@
     .bar{
         background-color: map-get($colors,first );
         border-top: 2px solid map-get($colors,second );
-        height: 22px;
+        height: 21px;
         box-shadow: 0 1px 8px 0;
         .barText{
             display: flex;

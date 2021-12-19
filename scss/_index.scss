@@ -10,13 +10,15 @@
                 font-size: 25px;
                 color: map-get($colors,second );
                 padding-bottom: 10px;
-                text-transform: uppercase;        
+                text-transform: uppercase; 
+                font-family: "poppinsbold";       
             }
             .span1{
                 font-size: 15px;
                 text-transform: uppercase;
                 padding-bottom: 30px;
                 color:map-get($colors,first );
+                font-weight: 900;
             }
             p{
                 font-size: 14px;
@@ -54,6 +56,7 @@
                         line-height: 18px;
                         text-align: center;
                         text-transform: uppercase;
+                        font-family: "poppinsM";
                     }
                 }          
             }
@@ -76,8 +79,10 @@
             padding: 10px;
             text-transform: uppercase;
             box-shadow: 0 1px 8px 0;
+            font-family: "poppinsM";
             .span2{
                 color: map-get($colors,third );
+                font-family: "poppinsM";
             }
         }    
     }
@@ -118,6 +123,7 @@
                 color: map-get($colors,second );
                 font-size: 14px;
                 padding-top: 15px;
+                font-family: "poppinsM";
             }
         }
     /* FIN SOBRE NOSOTROS MOBILE INDEX PAGE */
@@ -137,13 +143,15 @@
                 font-size: 30px;
                 color: map-get($colors,second );
                 padding-bottom: 10px;
-                text-transform: uppercase;        
+                text-transform: uppercase;   
+                font-family: "poppinsbold";     
             }
             .span1{
                 font-size: 20px;
                 text-transform: uppercase;
                 padding-bottom: 30px;
                 color: map-get($colors,first);
+                font-weight: 900;
             }
             p{
                 font-size: 16px;
@@ -180,6 +188,7 @@
                         line-height: 18px;
                         text-align: center;
                         text-transform: uppercase;
+                        font-weight: 900;
                     }
                     
                 }
@@ -203,7 +212,11 @@
                 padding: 10px;
                 text-transform: uppercase;
                 box-shadow: 0 1px 8px 0;
+                font-weight: 900;
+                font-family: "poppinsM";
                 .span2{
+                    font-weight: 900;
+                    font-family: "poppinsM";
                     color: map-get($colors,third );
                 }    
             }
@@ -258,6 +271,8 @@
                 text-transform: uppercase;
                 color: map-get($colors,second );
                 font-size: 17px;
+                font-family: "poppinsM";
+
             }
         }
     }

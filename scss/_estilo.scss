@@ -19,13 +19,27 @@ body{
     background:#e5e5e5;
     color:  map-get($colors,fourth );
     font-size: 14px;
-    font-family: "romatica";
+    font-family: "poppins";
+    font-weight: 500;
+}
+@font-face {
+    font-family: "poppins";
+    src: url(../assets/font/Poppins-Light.ttf);
+}
+@font-face{
+    font-family: "poppinsbold" ;
+    src: url(../assets/font/Poppins-SemiBold.ttf);   
+}
+@font-face{
+    font-family: "poppinsM";
+    src: url(../assets/font/Poppins-Medium.ttf);
 }
 .textCenter{
     text-align: center;
 }
 .subtitulo{
     font-size: 14px;
+    font-family: "poppinsbold";
     color: map-get($colors,second );
     text-transform: uppercase;
 }
@@ -104,8 +118,4 @@ body{
 
 h2,h3,h4{
     font-size: 15px;
-}
-@font-face {
-    font-family: "romatica";
-    src: url(../assets/font/Romanica.ttf);
 }

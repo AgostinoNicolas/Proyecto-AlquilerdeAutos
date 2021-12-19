@@ -7,13 +7,27 @@ body {
   background: #e5e5e5;
   color: #4a4a4a;
   font-size: 14px;
-  font-family: "romatica"; }
+  font-family: "poppins";
+  font-weight: 500; }
+
+@font-face {
+  font-family: "poppins";
+  src: url(../assets/font/Poppins-Light.ttf); }
+
+@font-face {
+  font-family: "poppinsbold";
+  src: url(../assets/font/Poppins-SemiBold.ttf); }
+
+@font-face {
+  font-family: "poppinsM";
+  src: url(../assets/font/Poppins-Medium.ttf); }
 
 .textCenter {
   text-align: center; }
 
 .subtitulo, .subtitulo--marginbotton {
   font-size: 14px;
+  font-family: "poppinsbold";
   color: #313e50;
   text-transform: uppercase; }
 
@@ -89,17 +103,13 @@ body {
 h2, h3, h4 {
   font-size: 15px; }
 
-@font-face {
-  font-family: "romatica";
-  src: url(../assets/font/Romanica.ttf); }
-
 /* VISTA MOBILE  */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   /* GRID CONTAINER INDEX PAGE MOBILE */
   main {
     display: grid;
     grid-template-areas: "gridHeaderIndex" "gridEncabezado" "gridCotizar" "gridText" "gridSobreNosotros" "gridFooterIndex";
-    grid-template-rows: 280px 10px 140px 750px 170px 226px 1fr;
+    grid-template-rows: 280px 10px 160px 750px 190px 226px 1fr;
     grid-template-columns: 100%; }
     main header .gridHeaderIndix {
       grid-area: headerindex; }
@@ -118,7 +128,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridCondicionesAlquiler" "gridCargosAdicionales" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 280px 10px 1280px 130px 160px 1fr; }
+    grid-template-rows: 280px 10px 1450px 130px 160px 1fr; }
     .gridRequisitosPage .gridRequisitosPage header {
       grid-area: header; }
     .gridRequisitosPage .gridRequisitosPage .gridHeaderBar {
@@ -154,7 +164,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridServicios" "gridServiciosInformativo" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 280px 10px 110px 380px 400px 160px 1fr; }
+    grid-template-rows: 280px 10px 130px 400px 460px 160px 1fr; }
     .gridServiciosPage .gridServiciosPage header {
       grid-area: header; }
     .gridServiciosPage .gridServiciosPage .gridHeaderBar {
@@ -220,7 +230,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridCondicionesAlquiler" "gridCargosAdicionales" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 110px 20px 520px 120px 110px 1fr; }
+    grid-template-rows: 110px 20px 520px 140px 110px 1fr; }
     .gridRequisitosPage .gridRequisitosPage header {
       grid-area: header; }
     .gridRequisitosPage .gridRequisitosPage .gridHeaderBar {
@@ -256,7 +266,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridServicios" "gridServiciosInformativo" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 110px 20px 70px 150px 150px 110px 1fr; }
+    grid-template-rows: 110px 20px 70px 160px 160px 110px 1fr; }
     .gridServiciosPage .gridServiciosPage header {
       grid-area: header; }
     .gridServiciosPage .gridServiciosPage .gridHeaderBar {
@@ -305,7 +315,7 @@ h2, h3, h4 {
       text-decoration: none;
       color: #00c2cb;
       font-size: 20px;
-      font-family: "romatica";
+      font-family: "poppins";
       display: block; }
     li a:hover {
       text-decoration: none;
@@ -354,7 +364,8 @@ h2, h3, h4 {
       text-decoration: none;
       color: #00c2cb;
       font-size: 20px;
-      font-family: "romatica";
+      font-family: "poppins";
+      font-weight: 900;
       transition: 0.5s; }
     li:hover {
       color: white; }
@@ -378,7 +389,7 @@ h2, h3, h4 {
   .bar {
     background-color: #00c2cb;
     border-top: 2px solid #313e50;
-    height: 22px;
+    height: 21px;
     box-shadow: 0 1px 8px 0; }
     .bar .barText {
       display: flex;
@@ -408,12 +419,14 @@ h2, h3, h4 {
       font-size: 25px;
       color: #313e50;
       padding-bottom: 10px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "poppinsbold"; }
     .gridEncabezado .boxEncabezado .span1 {
       font-size: 15px;
       text-transform: uppercase;
       padding-bottom: 30px;
-      color: #00c2cb; }
+      color: #00c2cb;
+      font-weight: 900; }
     .gridEncabezado .boxEncabezado p {
       font-size: 14px;
       padding: 10px; }
@@ -446,7 +459,8 @@ h2, h3, h4 {
             font-size: 16px;
             line-height: 18px;
             text-align: center;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+            font-family: "poppinsM"; }
   /* FIN BOX FLEX COTIZAR MOBILE INDEX PAGE */
   /* FLEX SOLICITAR COTIZACION MOBILE INDEX PAGE */
   .flexSolicitarCotizacion {
@@ -463,9 +477,11 @@ h2, h3, h4 {
       width: 60%;
       padding: 10px;
       text-transform: uppercase;
-      box-shadow: 0 1px 8px 0; }
+      box-shadow: 0 1px 8px 0;
+      font-family: "poppinsM"; }
       .flexSolicitarCotizacion .boxSolicitarCotizacion .span2 {
-        color: white; }
+        color: white;
+        font-family: "poppinsM"; }
   /* FIN FLEX SOLICITAR COTIZACION MOBILE INDEX PAGE */
   /* FIN COTIZAR MOBILE INDEX PAGE */
   /* PARALLAX MOBILE */
@@ -501,7 +517,8 @@ h2, h3, h4 {
         text-transform: uppercase;
         color: #313e50;
         font-size: 14px;
-        padding-top: 15px; } }
+        padding-top: 15px;
+        font-family: "poppinsM"; } }
 
 /* FIN VISTA MOBILE INDEX PAGE */
 /* VISTA DESKTOP INDEX PAGE */
@@ -515,12 +532,14 @@ h2, h3, h4 {
       font-size: 30px;
       color: #313e50;
       padding-bottom: 10px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "poppinsbold"; }
     .gridEncabezado .boxEncabezado .span1 {
       font-size: 20px;
       text-transform: uppercase;
       padding-bottom: 30px;
-      color: #00c2cb; }
+      color: #00c2cb;
+      font-weight: 900; }
     .gridEncabezado .boxEncabezado p {
       font-size: 16px;
       padding: 10px; }
@@ -555,7 +574,8 @@ h2, h3, h4 {
             font-size: 22px;
             line-height: 18px;
             text-align: center;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+            font-weight: 900; }
     .gridCotizar .flexSolicitarCotizacion {
       display: flex;
       direction: row;
@@ -571,8 +591,12 @@ h2, h3, h4 {
         width: 300px;
         padding: 10px;
         text-transform: uppercase;
-        box-shadow: 0 1px 8px 0; }
+        box-shadow: 0 1px 8px 0;
+        font-weight: 900;
+        font-family: "poppinsM"; }
         .gridCotizar .flexSolicitarCotizacion .boxSolicitarCotizacion .span2 {
+          font-weight: 900;
+          font-family: "poppinsM";
           color: white; }
       .gridCotizar .flexSolicitarCotizacion .boxSolicitarCotizacion:hover {
         text-align: center;
@@ -618,7 +642,8 @@ h2, h3, h4 {
       .flexSobreNosotros .boxItems .item {
         text-transform: uppercase;
         color: #313e50;
-        font-size: 17px; }
+        font-size: 17px;
+        font-family: "poppinsM"; }
   /* FIN SOBRE NOSOTROS DESKTOP INDEX PAGE */ }
 
 /* FIN VISTA INDEX DESKTOP */
@@ -887,7 +912,8 @@ h2, h3, h4 {
         padding: 5px;
         border-radius: 6px;
         color: #00c2cb;
-        text-decoration: none; }
+        text-decoration: none;
+        margin-left: 5px; }
   /* FIN COTIZAR AHORA MOBILE */
   /* MOBILE FOOTER */
   footer {
@@ -963,7 +989,7 @@ h2, h3, h4 {
       text-transform: uppercase; }
       .boxCotizarAhora .buttonCotizarAhora a {
         text-decoration: none;
-        font-size: 10px;
+        font-size: 12px;
         background: #313e50;
         color: #00c2cb;
         margin: 5px;

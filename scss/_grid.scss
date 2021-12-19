@@ -11,7 +11,7 @@
         "gridSobreNosotros"
         "gridFooterIndex";
 
-        grid-template-rows: 280px 10px 140px 750px 170px 226px 1fr;
+        grid-template-rows: 280px 10px 160px 750px 190px 226px 1fr;
         grid-template-columns: 100%;
         header{
             .gridHeaderIndix{
@@ -56,7 +56,7 @@
         "gridFooter";
 
         grid-template-columns: 100%;
-        grid-template-rows: 280px 10px 1280px 130px 160px 1fr;
+        grid-template-rows: 280px 10px 1450px 130px 160px 1fr;
         .gridRequisitosPage{
             header{
                 grid-area: header;
@@ -142,7 +142,7 @@
         "gridFooter";
 
         grid-template-columns: 100% ;
-        grid-template-rows: 280px 10px 110px 380px 400px 160px 1fr;
+        grid-template-rows: 280px 10px 130px 400px 460px 160px 1fr;
         .gridServiciosPage{
             header{
                 grid-area: header;
@@ -297,7 +297,7 @@
         "gridFooter";
 
         grid-template-columns: 100%;
-        grid-template-rows: 110px 20px 520px 120px 110px 1fr;
+        grid-template-rows: 110px 20px 520px 140px 110px 1fr;
         .gridRequisitosPage{
             header{
                 grid-area: header;
@@ -383,7 +383,7 @@
         "gridFooter";
 
         grid-template-columns: 100%;
-        grid-template-rows: 110px 20px 70px 150px 150px 110px 1fr;
+        grid-template-rows: 110px 20px 70px 160px 160px 110px 1fr;
         .gridServiciosPage{
             header{
                 grid-area: header;
