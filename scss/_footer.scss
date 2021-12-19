@@ -52,6 +52,9 @@
         flex-wrap: nowrap;
         justify-content: space-around;
         .boxFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 10px;
             font-size: 16px;
             p{
@@ -59,16 +62,25 @@
             }
             .boxFooterContactanos{
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                flex-direction: row;
+                justify-content: flex-start;
                 margin-top: 5px;
                 .contacto{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    .fa-envelope{
+                        margin-left: 5px;
+                    }
                     p{
                         margin-left: 5px;
                         font-size: 15px;
+                    }
+                    a{
+                        display: none;
+                    }
+                    i{
+                        font-size: 25px;
                     }
                 }
             }
@@ -77,12 +89,18 @@
                 flex-direction: row;
                 justify-content: flex-start;
                 margin-top: 5px;
+                i{
+                    font-size: 18px;
+                }
             }
             .boxFooterSeguinos{
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
                 margin-top: 5px;
+                i{
+                    font-size: 25px;
+                }
             }
         }
         .copyR{
@@ -158,7 +176,7 @@
         .boxFooter{
             padding: 20px;
             p{
-                font-size: 17px;
+                font-size: 20px;
             }
             .boxFooterContactanos{
                 display: flex;

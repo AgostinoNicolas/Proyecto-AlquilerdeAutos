@@ -72,27 +72,28 @@ body{
     margin: 20px;
     justify-content: center;
 }
+/* ICONOS */
 .fa-whatsapp{
-    font-size: 22px;
+    font-size: 24px;
 }
 .fa-envelope{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .fa-cc-visa{
-    font-size: 18px;
+    font-size: 20px;
 }
 .fa-cc-mastercard{
-    font-size: 18px;
+    font-size: 20px;
 }
 .fa-cc-amex{
-    font-size: 18px;
+    font-size: 20px;
 }
 .fa-facebook-square{
-    font-size: 22px;
+    font-size: 30px;
 }
 .fa-instagram{
-    font-size: 22px;
+    font-size: 30px;
 }
 .fa-caret-right{
     color: map-get($colors,first);
@@ -115,6 +116,7 @@ body{
     color: map-get($colors,first);
     margin-bottom: 10px;
 }
+/* FIN ICONOS */
 
 h2,h3,h4{
     font-size: 15px;

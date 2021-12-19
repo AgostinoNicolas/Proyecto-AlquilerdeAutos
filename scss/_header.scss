@@ -42,7 +42,6 @@
     /* BARRA DE LLAMADAS MOBILE*/
      .bar{
         background-color: map-get($colors,first );
-        border-top: 2px solid map-get($colors,second );
         width: 100%;
         box-shadow: 0 1px 8px 0;;
         .barText{
@@ -101,8 +100,7 @@
     /* BARRA DE LLAMADAS DESKTOP */
     .bar{
         background-color: map-get($colors,first );
-        border-top: 2px solid map-get($colors,second );
-        height: 21px;
+        height: 20px;
         box-shadow: 0 1px 8px 0;
         .barText{
             display: flex;
@@ -117,6 +115,7 @@
                 text-decoration: none;  
                 margin-left: 10px;
                 .fa-whatsapp{
+                    font-size: 20px;
                     color: map-get($colors,second );
                 }
             } 

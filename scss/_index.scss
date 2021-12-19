@@ -175,9 +175,9 @@
                 border-radius: 6px;
                 border: 2px solid map-get($colors,first );;
                 height: 240px;
-                width: 350px;
+                width: 400px;
                 justify-content: center;
-                box-shadow: 0 1px 8px 0;
+                box-shadow: 0 1px 8px 0 black;
                 .boxCotizarContenido{
                     padding: 15px;
                     font-size: 15px;
@@ -211,7 +211,7 @@
                 width: 300px;
                 padding: 10px;
                 text-transform: uppercase;
-                box-shadow: 0 1px 8px 0;
+                box-shadow: 0 1px 8px 0 black;
                 font-weight: 900;
                 font-family: "poppinsM";
                 .span2{
