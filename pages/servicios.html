@@ -9,6 +9,7 @@
     <meta name="keywords" content="alquiler de autos servicios, rent a car servicios, alquilar un auto servicios, alquiler de autos servicios, rent car servicios, rentar autos servicios">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7fcd76d310.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Servicios - Surcar - Alquiler de autos</title>
 </head>
@@ -71,7 +72,9 @@
         <!-- SERVICIOS -->
         <div class="gridServicios">
             <div class="flexServicios">
-                <section class="bordeServicios">
+                <section data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="bordeServicios">
                     <div class="textCenter">
                         <i class="far fa-money-bill-alt"></i>
                         <h3 class="subtitulo">El mejor precio</h3>
@@ -80,7 +83,9 @@
                             Con nosotros ahorras dinero porque nuestras tarifa es flexible y económica 
                         </p>
                 </section>
-                <section class="bordeServicios">
+                <section data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" class="bordeServicios">
                     <div class="textCenter">
                         <i class="fas fa-plane-departure"></i>
                         <h3 class="subtitulo">Servicio en aeropuerto</h3>
@@ -89,7 +94,9 @@
                             Entrega y recepcion en Aeroparque Jorge Newbery y Aeropuerto Ezeiza
                         </p>
                 </section>
-                <section class="bordeServicios">
+                <section data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="bordeServicios">
                     <div class="textCenter">
                         <i class="fas fa-phone-volume"></i>
                         <h3 class="subtitulo">Atención al cliente</h3>
@@ -178,5 +185,12 @@
         </footer>
         <!-- FIN FOOTER -->
     </div>
+    <a class="btn-wsp" href="https://wa.me/541121858330">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

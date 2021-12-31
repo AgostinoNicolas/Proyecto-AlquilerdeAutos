@@ -9,6 +9,7 @@
     <meta name="keywords" content="alquiler de autos, rent a car, alquilar un auto, alquiler de autos, rent car, rentar autos">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7fcd76d310.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Alquiler de autos - Surcar - Rent a car</title>
 </head>
@@ -63,7 +64,9 @@
             <!-- BOX FLEX COTIZAR-->
             <div class="flexCotizar">
                 <!-- BOX COTIZAR RETIRAR-->
-                <div class="boxCotizar">            
+                <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="boxCotizar">            
                     <div class="boxCotizarContenido">
                          <p class="boxCotizarContenidoP">Retira</p>
                         <br>
@@ -87,7 +90,9 @@
                 </div>
                 <!-- FIN BOX COTIZAR RETIRAR -->
                 <!-- BOX COTIZAR DEVUELVE -->
-                <div class="boxCotizar">
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" class="boxCotizar">
                     <div class="boxCotizarContenido">
                         <p class="boxCotizarContenidoP">Devuelve</p>
                         <br>
@@ -111,7 +116,9 @@
                 </div>
                 <!-- FIN BOX COTIZAR DEVUELVE-->
                 <!-- BOX COTIZAR VEHICULO-->
-                <div class="boxCotizar">
+                <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" class="boxCotizar">
                     <div class="boxCotizarContenido textCenter">
                         <p class="boxCotizarContenidoP">Vehículo</p>
                         <br>
@@ -157,13 +164,17 @@
         </div>
         <!-- FIN PARALLAX-->
         <!-- SOBRE NOSOTROS-->
-        <section class="gridSobreNosotros">
+        <section  class="gridSobreNosotros">
             <div class="boxText">
-                <div>
+                <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2 class="subtitulo--marginbotton">Sobre nosotros</h2>
                 </div>
                 <div class="flexSobreNosotros">
-                    <div class="textSobreNosotros">
+                    <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" class="textSobreNosotros">
                         <p>
                             <strong>Surcar rent a car</strong> es una empresa líder en alquiler de autos sin chofer en Buenos Aires Argentina. Con una alta experiencia en el mercado de rent a car.
                         </P>
@@ -193,7 +204,9 @@
                         </p>
                         <br>
                     </div>
-                    <div class="boxItems">
+                    <div data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" class="boxItems">
                         <h3 class="item">
                             <i class="fas fa-check-circle"></i>
                             Servicio a domicilio
@@ -258,6 +271,13 @@
         </footer>
         <!-- FIN FOOTER -->
     </main>
-    <!-- FIN GRID -->  
+    <a class="btn-wsp" href="https://wa.me/541121858330">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- FIN GRID -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>  
 </body>
 </html>

@@ -9,6 +9,7 @@
     <meta name="keywords" content="alquiler de autos requisitos, rent a car requisitos, alquilar un auto requisitos, alquiler de autos requisitos, rent car requisitos, rentar autos requisitos">  
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7fcd76d310.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Condiciones - Surcar - Alquiler de autos</title>
 </head>
@@ -61,11 +62,13 @@
         <!-- CONDICIONES DE ALQUILER -->
         <section class="gridCondicionesAlquiler">
             <div>
-                 <div class="subtitulo boxText">
+                 <div data-aos="fade-up"
+                 data-aos-duration="3000" class="subtitulo boxText">
                     <h2>Condiciones de alquiler</h2>
                 </div>
                 <div class="flexCondicionesAlquiler">
-                    <div class="textCondicionesAlquiler boxText">  
+                    <div data-aos="fade-up"
+                    data-aos-duration="3000" class="textCondicionesAlquiler boxText">  
                         <p>
                             <i class="fas fa-caret-right"></i>
                             El vehículo se entrega limpio y con combustible, por lo que la devolución deberá efectuarse de la misma manera. Caso contrario, se cobrara el reabastecimiento y/o lavado al precio fijado por Surcar rent a car
@@ -111,7 +114,9 @@
                             La cancelación de una reserva confirmada tendrá una penalización del 20% del valor del alquiler.
                         </p><br>
                     </div>
-                    <div class="boxRequisitos">
+                    <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" class="boxRequisitos">
                         <div class="subtitulo">
                             <h3>Requisitos</h3>
                         </div>
@@ -215,5 +220,12 @@
         </footer>
         <!-- FIN FOOTER -->  
     </div>
+    <a class="btn-wsp" href="https://wa.me/541121858330">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

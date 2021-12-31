@@ -34,6 +34,23 @@ body{
     font-family: "poppinsM";
     src: url(../assets/font/Poppins-Medium.ttf);
 }
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #20d466;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 50;
+    .fa-whatsapp {
+        font-size: 35px; 
+    }
+}
 .textCenter{
     text-align: center;
 }
