@@ -9,12 +9,13 @@
     <meta name="keywords" content="alquiler de autos contacto, rent a car contacto, alquilar un auto contacto, alquiler de autos contacto, rent car contacto, rentar autos contacto">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7fcd76d310.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contáctenos para alquilar un auto - Surcar rent a car</title>
 </head>
 <body>
     <div class="gridContactoPage">
-       <!-- HEADER -->
+        <!-- HEADER -->
         <header>
             <div class="headerLogo">
                 <!-- LOGO -->  
@@ -46,7 +47,7 @@
             <!-- FIN NAV -->
         </header>
         <!-- FIN HEADER -->          
-        <!-- BARRA DE LLAMADAS-->
+        <!-- BARRA DE LLAMADAS -->
         <section class="gridHeaderBar bar">
             <div class="barText">
                 <p><strong>Esperamos tu llamado para consultas y reservas</strong></p>
@@ -57,48 +58,53 @@
                 </div>
             </div>
         </section>
-        <!-- FIN BARRA DE LLAMADAS-->
+        <!-- FIN BARRA DE LLAMADAS -->
         <!-- ENCABEZADO -->
         <section class="gridEncabezado boxText">
-            <div class="subtitulo">
+            <div class="subtitulo textCenter">
                 <h2>Contacto y consultas</h2>
             </div>
-            <p class="textParagraph">
+            <p class="textParagraph textCenter">
                 Nos destacamos por llevar seguridad, confianza y calidad a nuestros clientes.
             </p>
         </section>
         <!-- FIN ENCABEZADO -->
         <!-- FORMULARIO Y UBICACION -->
         <section class="gridFormularioUbicacion">
-            <div class="boxText textParagraph">
+            <div class="boxText textParagraph textCenter">
                 <p>Completa el siguiente formulario y nos contactaremos en la brevedad</p>
             </div>
-            <section class="boxFormulario">
-                <div class="flexFormulario textParagraph">
+            <section data-aos="fade-up"
+            data-aos-duration="3000" class="boxFormulario">
+                <div class="flexFormulario">
                     <form action="">
+                        <div class="d-flex">
                             <div>
                                 <label for="nombre">Nombre</label><br>
                                 <input type="text" name="nombre" id="nombre" required>
                             </div>
-                            <div>
+                            <div class="p-l40"> 
                                 <label for="apellido">Apellido</label><br>
                                 <input type="text" name="apellido" id="apellido" required>
                             </div>
+                        </div>
+                        <div class="d-flex">
                             <div>
                                 <label for="telefono">Telefono</label><br>
                                 <input type="tel" name="telefono" id="telefono" required>
                             </div>
-                            <div>
+                            <div class="p-l40">
                                 <label for="tumail">Email</label><br>
                                 <input type="email" name="tumail" id="tumail" required>
                             </div>
-                            <div>
-                                <label for="info-adicional">Información adicional</label><br>
-                                <textarea name="info-adicional" id="info-adicional" cols="30" rows="10"></textarea>
-                            </div>
-                            <div>
-                                <input type="submit" value="Enviar Información">
-                            </div>
+                        </div>
+                        <div>
+                            <label for="info-adicional">Información adicional</label><br>
+                            <textarea name="info-adicional" id="info-adicional" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="d-flex justify-c-c enviar">
+                            <input type="submit" value="Enviar Información">
+                        </div>
                     </form>
                     <div>
                         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.688725725626!2d-58.515887320156104!3d-34.618770028609006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9cd6c5b1d55%3A0x97258a11bd724a9c!2sMonte%20Castro%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1637887512824!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -166,5 +172,9 @@
     <a class="btn-wsp" href="https://wa.me/541121858330">
         <i class="fab fa-whatsapp"></i>
     </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

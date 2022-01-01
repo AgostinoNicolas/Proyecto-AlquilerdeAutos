@@ -9,6 +9,7 @@
     <meta name="keywords" content="alquiler de autos, rent a car, alquilar un auto, alquiler de autos, rent car, rentar autos">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/7fcd76d310.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Vehículos en alquiler - Surcar rent a car</title>
 </head>
@@ -46,7 +47,7 @@
             <!-- FIN NAV -->
         </header>
         <!-- FIN HEADER -->   
-        <!-- BARRA DE LLAMADAS-->
+        <!-- BARRA DE LLAMADAS -->
         <section class="gridHeaderBar bar">
             <div class="barText">
                 <p><strong>Esperamos tu llamado para consultas y reservas</strong></p>
@@ -57,18 +58,18 @@
                 </div>
             </div>
         </section>
-        <!-- FIN BARRA DE LLAMADAS--> 
+        <!-- FIN BARRA DE LLAMADAS --> 
         <!-- ENCABEZADO -->
         <section class=" gridEncabezafo boxText">
-            <div class="subtitulo">
+            <div class="subtitulo textCenter">
                 <h2>Nuestros Vehículos</h2>
             </div>
-                <p class="textParagraph">
+                <p class="textParagraph textCenter">
                     Selecciona el vehículo que mejor se adapte a tus necesidades de nuestra flota de alquiler de autos.
                 </p>
         </section>
         <!-- FIN ENCABEZADO -->
-        <!--  BOXCARS -->
+        <!-- BOX CARS -->
         <section class="gridBoxCar boxCar flexBoxCar">
             <!-- CHEVROLET ONIX -->
             <section class="car">
@@ -207,7 +208,25 @@
             </section>
             <!-- FIN CHEVROLET SPIN -->
         </section>
-        <!-- FIN BOXCAR -->
+        <!-- FIN BOX CAR -->
+        <!-- TEXTO INFORMATIVO -->
+        <section data-aos="fade-right" class="gridTextInformativo">
+            <div class="franquicia">
+                <p>
+                    <i class="fas fa-caret-right"></i>
+                    La franquicia es un requisito fundamental para alquilar un auto y debe ser cubierta en su totalidad con tarjeta de crédito.
+                </p>
+                <p>
+                    <i class="fas fa-caret-right"></i>
+                    Verifique el límite crediticio de su tarjeta de crédito llamando al número de teléfono que figura en el dorso de la misma.
+                </p>
+                <p>
+                    <i class="fas fa-caret-right"></i>
+                    La tarjeta de crédito puede ser de un tercero siempre y cuando el mismo esté presente en el momento de la firma del contrato.
+                </p>
+            </div>
+        </section>
+        <!-- FIN TEXTO INFORMATIVO -->
         <!-- COTIZAR AHORA -->
         <section class="gridCotizarAhora boxCotizarAhora">
                 <p class="subtitulo">
@@ -267,5 +286,9 @@
     <a class="btn-wsp" href="https://wa.me/541121858330">
         <i class="fab fa-whatsapp"></i>
     </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,0 +1,247 @@
+/* VISTA DESKTOP */
+@media only screen and (min-width: 1024px) {
+    /* GRID CONTAINER INDEX PAGE DESTOP */
+    main{
+        display: grid;
+        grid-template-areas: 
+        "gridHeaderIndex"
+        "gridHeaderBar"
+        "gridEncabezado"
+        "gridCotizar"
+        "gridText"
+        "gridSobreNosotros"
+        "gridFooterIndex";
+    
+        grid-template-rows: 110px 20px 150px 390px 60px 370px 1fr;
+        grid-template-columns: 100%;
+        header{
+            .gridHeaderIndix{
+                grid-area: headerindex;
+            }
+        }        
+        section{
+            .gridHeaderBar{
+                grid-area: headerbar;
+            }
+        }
+        section{
+            .gridHeaderBar{
+                grid-area: headerbar;
+            }
+        }
+        section{
+            .gridEncabezado{
+                grid-area: gridencabezado;
+            }
+        }    
+        section{
+            .gridCotizar{
+                grid-area: gridcotizar;
+            }
+        }
+        section{
+            .gridText{
+                grid-area: gridText;
+            }
+        }
+        section{
+            .gridSobreNosotros{
+                grid-area: gridsobrenosotros;
+            }
+        }
+        footer{
+            .gridFooterIndex{
+                grid-area: footerindex;
+            }
+        }
+    }
+    /* FIN GRID CONTAINER INDEX PAGE DESKTOP */
+    /* GRID CONTAINER REQUISITOS PAGE DESKTOP */
+    .gridRequisitosPage{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "gridHeaderBar"
+        "gridCondicionesAlquiler"
+        "gridCargosAdicionales"
+        "gridCotizarAhora"
+        "gridFooter";
+
+        grid-template-columns: 100%;
+        grid-template-rows: 110px 20px 520px 140px 110px 1fr;
+        .gridRequisitosPage{
+            header{
+                grid-area: header;
+            }
+        }
+        .gridRequisitosPage{
+            .gridHeaderBar{
+                grid-area: gridHeaderBar;
+            }
+        } 
+        .gridRequisitosPage{
+            .gridCondicionesAlquiler{
+                grid-area: gridCondicionesAlquiler;
+            }
+        } 
+        .gridRequisitosPage{
+            .gridCotizarAhora{
+                grid-area: gridCotizarAhora;
+            }
+        } 
+        .gridRequisitosPage{
+            .gridFooter{
+                grid-area: gridFooter;
+            }
+        } 
+    }
+    /* FIN GRID CONTAINER REQUISITOS PAGE DESKTOP */
+    /* GRID CONTAINER VEHICULOS PAGE DESKTOP */
+    .gridVehiculoPage{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "gridHeaderBar"
+        "gridEncabezado"
+        "gridBoxCar"
+        "gridTextInformativo"
+        "gridCotizarAhora"
+        "gridFooter";
+
+        grid-template-columns: 100%;
+        grid-template-rows: 110px 20px 70px 700px 90px 110px 1fr;
+        .gridVehiculoPage{
+            header{
+                grid-area: header;
+            }
+        }
+        .gridVehiculoPage{
+            .gridHeaderBar{
+                grid-area: gridHeaderBar;
+            }
+        } 
+       .gridVehiculoPage{
+            .gridEncabezado{
+                grid-area: gridEncabezado;
+            }
+        } 
+       .gridVehiculoPage{
+            .gridBoxCar{
+                grid-area: gridBoxCar;
+            }
+        }
+        .gridVehiculoPage{
+            .gridTextInformativo{
+                grid-area: gridTextInformativo;
+            }
+        }     
+       .gridVehiculoPage{
+            .gridCotizarAhora{
+                grid-area: gridCotizarAhora;
+            }
+        } 
+       .gridVehiculoPage{
+            .gridFooter{
+                grid-area: gridFooter;
+            }
+        }     
+    }
+    /* FIN GRID CONTAINER VEHICULOS PAGE DESKTOP */
+    /* GRID CONTAINER SERVICIOS PAGE DESKTOP */
+    .gridServiciosPage{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "gridHeaderBar"
+        "gridEncabezado"
+        "gridServicios"
+        "gridServiciosInformativo"
+        "gridCotizarAhora"
+        "gridFooter";
+
+        grid-template-columns: 100%;
+        grid-template-rows: 110px 20px 70px 160px 160px 110px 1fr;
+        .gridServiciosPage{
+            header{
+                grid-area: header;
+            }
+        } 
+        .gridServiciosPage{
+            .gridHeaderBar{
+                grid-area: gridHeaderBar;
+            }
+        } 
+        .gridServiciosPage{
+            .gridEncabezado{
+                grid-area: gridEncabezado;
+            }
+
+        } 
+        .gridServiciosPage{
+            .gridServicios{
+                grid: gridServicios;
+            }
+        } 
+        .gridServiciosPage{
+            .gridServiciosInformativo{
+                grid-area: gridServiciosInformativo;
+            }
+        }
+        .gridServiciosPage{
+            .gridCotizarAhora{
+                grid-area: gridCotizarAhora;
+            }
+        } 
+        .gridServiciosPage{
+            .gridFooter{
+                grid-area: gridFooter;
+            }
+        } 
+    }
+    /* FIN CONTAINER SERVICIOS PAGE DESKTOP */
+    /* GRID CONTAINER CONTACTO DESKTOP */
+    .gridContactoPage{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "gridHeaderBar"
+        "gridEncabezado"
+        "gridFormularioUbicacion"
+        "gridCotizarAhora"
+        "gridFooter";
+
+        grid-template-columns: 100%;
+        grid-template-rows: 110px 20px 50px 480px 110px 1fr;
+        .gridContactoPage{
+            header{
+                grid-area: header;
+            }
+        } 
+        .gridContactoPage{
+            .gridHeaderBar{
+                grid-area: gridHeaderBar;
+            }
+        } 
+        .gridContactoPage{
+            .gridEncabezado{
+                grid-area: gridEncabezado;
+            }
+        } 
+        .gridContactoPage{
+            .gridFormularioUbicacion{
+                grid-column: gridFormularioUbicacion;
+            }
+        } 
+        .gridContactoPage{
+            .gridCotizarAhora{
+                grid-area: gridCotizarAhora;
+            }
+        } 
+        .gridContactoPage{
+            .gridFooter{
+                grid-area: gridFooter;
+            }
+        } 
+    }
+    /* FIN GRID CONTAINER CONTACTO DESKTOP */
+}

@@ -34,6 +34,7 @@ body{
     font-family: "poppinsM";
     src: url(../assets/font/Poppins-Medium.ttf);
 }
+/* BOTTOM WHATSAPP */
 .btn-wsp{
     position: fixed;
     width: 55px;
@@ -51,6 +52,7 @@ body{
         font-size: 35px; 
     }
 }
+
 .textCenter{
     text-align: center;
 }
@@ -64,7 +66,6 @@ body{
     @extend .subtitulo;
     margin-bottom: 10px;
 }
-
 .secundaryText{
     margin: 0px 40px 40px 40px;
     padding: 10px;
@@ -78,7 +79,8 @@ body{
 }
 .boxText{
     margin: 10px 30px 10px 30px;
-}        
+}
+     
 .marg5{
     margin-left: 5px;
 }

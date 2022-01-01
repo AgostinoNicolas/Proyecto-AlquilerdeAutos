@@ -22,6 +22,7 @@ body {
   font-family: "poppinsM";
   src: url(../assets/font/Poppins-Medium.ttf); }
 
+/* BOTTOM WHATSAPP */
 .btn-wsp {
   position: fixed;
   width: 55px;
@@ -127,7 +128,7 @@ h2, h3, h4 {
   main {
     display: grid;
     grid-template-areas: "gridHeaderIndex" "gridEncabezado" "gridCotizar" "gridText" "gridSobreNosotros" "gridFooterIndex";
-    grid-template-rows: 280px 10px 160px 750px 190px 226px 1fr;
+    grid-template-rows: 290px 10px 160px 750px 190px 226px 1fr;
     grid-template-columns: 100%; }
     main header .gridHeaderIndix {
       grid-area: headerindex; }
@@ -146,7 +147,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridCondicionesAlquiler" "gridCargosAdicionales" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 280px 10px 1450px 130px 160px 1fr; }
+    grid-template-rows: 290px 10px 1450px 130px 160px 1fr; }
     .gridRequisitosPage .gridRequisitosPage header {
       grid-area: header; }
     .gridRequisitosPage .gridRequisitosPage .gridHeaderBar {
@@ -161,9 +162,9 @@ h2, h3, h4 {
   /* GRID CONTAINER VEHÍCULOS PAGE MOBILE */
   .gridVehiculoPage {
     display: grid;
-    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridBoxCar" "gridCotizarAhora" "gridFooter";
+    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridBoxCar" "gridTextInformativo" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 280px 10px 80px 930px 160px 360px 1fr; }
+    grid-template-rows: 290px 10px 80px 930px 210px 360px 1fr; }
     .gridVehiculoPage .gridVehiculosPage header {
       grid-area: header; }
     .gridVehiculoPage .gridVehiculosPage .gridHeaderBar {
@@ -172,6 +173,8 @@ h2, h3, h4 {
       grid-area: gridEncabezado; }
     .gridVehiculoPage .gridVehiculosPage .gridBoxCar {
       grid-area: gridBoxCar; }
+    .gridVehiculoPage .gridVehiculoPage .gridTextInformativo {
+      grid-area: gridTextInformativo; }
     .gridVehiculoPage .gridVehiculosPage .gridCotizarAhora {
       grid-area: gridCotizarAhora; }
     .gridVehiculoPage .gridVehiculosPage .gridFooter {
@@ -182,7 +185,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridServicios" "gridServiciosInformativo" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 280px 10px 130px 400px 460px 160px 1fr; }
+    grid-template-rows: 290px 10px 130px 400px 460px 160px 1fr; }
     .gridServiciosPage .gridServiciosPage header {
       grid-area: header; }
     .gridServiciosPage .gridServiciosPage .gridHeaderBar {
@@ -203,7 +206,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridFormularioUbicacion" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 280px 10px 80px 810px 160px 1fr; }
+    grid-template-rows: 290px 10px 80px 770px 160px 1fr; }
     .gridContactoPage .gridContactoPage header {
       grid-area: header; }
     .gridContactoPage .gridContactoPage .gridHeaderBar {
@@ -263,9 +266,9 @@ h2, h3, h4 {
   /* GRID CONTAINER VEHICULOS PAGE DESKTOP */
   .gridVehiculoPage {
     display: grid;
-    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridBoxCar" "gridCotizarAhora" "gridFooter";
+    grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridBoxCar" "gridTextInformativo" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 110px 20px 70px 700px 110px 1fr; }
+    grid-template-rows: 110px 20px 70px 700px 90px 110px 1fr; }
     .gridVehiculoPage .gridVehiculoPage header {
       grid-area: header; }
     .gridVehiculoPage .gridVehiculoPage .gridHeaderBar {
@@ -274,6 +277,8 @@ h2, h3, h4 {
       grid-area: gridEncabezado; }
     .gridVehiculoPage .gridVehiculoPage .gridBoxCar {
       grid-area: gridBoxCar; }
+    .gridVehiculoPage .gridVehiculoPage .gridTextInformativo {
+      grid-area: gridTextInformativo; }
     .gridVehiculoPage .gridVehiculoPage .gridCotizarAhora {
       grid-area: gridCotizarAhora; }
     .gridVehiculoPage .gridVehiculoPage .gridFooter {
@@ -305,7 +310,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridFormularioUbicacion" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 110px 20px 60px 480px 110px 1fr; }
+    grid-template-rows: 110px 20px 50px 480px 110px 1fr; }
     .gridContactoPage .gridContactoPage header {
       grid-area: header; }
     .gridContactoPage .gridContactoPage .gridHeaderBar {
@@ -724,7 +729,7 @@ h2, h3, h4 {
 /* FIN VISTA DESKTOP REQUISITOS PAGE  */
 /* VISTA MOBILE VEHÍCULOS PAGE  */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
-  /* BOXCAR MOBILE VEHÍCULOS PAGE */
+  /* BOX CAR MOBILE VEHÍCULOS PAGE */
   .flexBoxCar {
     display: flex;
     flex-direction: column;
@@ -774,12 +779,20 @@ h2, h3, h4 {
     text-transform: uppercase;
     font-size: 15px;
     border-radius: 6px; }
-  /* FIN BOXCAR MOBILE VEHÍCULOS PAGE */ }
+  /* FIN BOX CAR MOBILE VEHÍCULOS PAGE */
+  /* TEXTO INFORMATIVO */
+  .gridTextInformativo {
+    display: flex;
+    justify-content: center; }
+    .gridTextInformativo .franquicia {
+      padding-right: 15px;
+      padding-left: 15px; }
+  /* FIN TEXTO INFORMATIVO */ }
 
 /* FIN VISTA MOBILE VEHÍCULOS PAGE  */
 /* VISTA DESKTOP VEHÍCULOS PAGE */
 @media only screen and (min-width: 1024px) {
-  /* BOXCAR DESKTOP VEHÍCULOS PAGE */
+  /* BOX CAR DESKTOP VEHÍCULOS PAGE */
   .flexBoxCar {
     display: flex;
     flex-direction: column;
@@ -837,7 +850,12 @@ h2, h3, h4 {
           color: white;
           transform: scale(1.05, 1.05);
           transition: 0.6s; }
-  /* FIN BOXCAR DESKTOP VEHÍCULOS PAGE */ }
+  /* FIN BOX CAR DESKTOP VEHÍCULOS PAGE */
+  /* TEXTO INFORMATIVO */
+  .gridTextInformativo {
+    display: flex;
+    justify-content: center; }
+  /* FIN TEXTO INFORMATIVO */ }
 
 /* FIN VISTA DESKTOP VEHÍCULOS PAGE */
 /* VISTA MOBILE SERVICIOS PAGE  */
@@ -875,7 +893,6 @@ h2, h3, h4 {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .gridFormularioUbicacion .boxFormulario {
     margin: 10px;
-    padding: 20px;
     color: #00c2cb;
     background-color: #313e50;
     border-radius: 6px;
@@ -887,29 +904,59 @@ h2, h3, h4 {
       flex-direction: column;
       justify-content: space-evenly;
       height: 710px; }
+      .gridFormularioUbicacion .boxFormulario .flexFormulario form {
+        padding-left: 20px;
+        padding-right: 20px; }
+        .gridFormularioUbicacion .boxFormulario .flexFormulario form input {
+          width: 190px; }
+        .gridFormularioUbicacion .boxFormulario .flexFormulario form textarea {
+          width: 100%; }
+        .gridFormularioUbicacion .boxFormulario .flexFormulario form .enviar {
+          display: flex;
+          justify-content: center; }
       .gridFormularioUbicacion .boxFormulario .flexFormulario .map {
         width: 100%;
-        border-radius: 6px; } }
+        height: 267px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px; } }
 
 /* FIN VISTA MOBILE CONTACTO PAGE  */
 /* VISTA DESKTOP CONTACTO PAGE  */
 @media only screen and (min-width: 1024px) {
-  .gridFormularioUbicacion .boxFormulario {
-    margin: 10px 30px 10px 30px;
-    padding: 20px;
-    color: #00c2cb;
-    background-color: #313e50;
-    border-radius: 6px;
-    border: 2px solid #00c2cb;
-    width: 80%;
-    box-shadow: 0 1px 8px 0; }
-    .gridFormularioUbicacion .boxFormulario .flexFormulario {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center; }
-    .gridFormularioUbicacion .boxFormulario .map {
-      border-radius: 6px; } }
+  .d-flex {
+    display: flex; }
+  .justify-c-c {
+    justify-content: center; }
+  .p-l40 {
+    padding-left: 40px; }
+  .gridFormularioUbicacion {
+    margin: auto;
+    width: 70%; }
+    .gridFormularioUbicacion .boxFormulario {
+      color: #00c2cb;
+      background-color: #313e50;
+      border-radius: 6px;
+      border: 2px solid #00c2cb;
+      width: 100%;
+      box-shadow: 0 1px 8px 0;
+      height: 380px; }
+      .gridFormularioUbicacion .boxFormulario .flexFormulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 60px; }
+        .gridFormularioUbicacion .boxFormulario .flexFormulario div {
+          padding-bottom: 10px; }
+          .gridFormularioUbicacion .boxFormulario .flexFormulario div input {
+            width: 180px; }
+          .gridFormularioUbicacion .boxFormulario .flexFormulario div textarea {
+            width: 405px; }
+      .gridFormularioUbicacion .boxFormulario .map {
+        width: 450px;
+        height: 380px;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px; } }
 
 /* FIN VISTA DESKTOP CONTACTO PAGE  */
 /* VISTA MOBILE FOOTER */

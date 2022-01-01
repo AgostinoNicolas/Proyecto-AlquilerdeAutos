@@ -3,7 +3,6 @@
     .gridFormularioUbicacion{
         .boxFormulario{
             margin: 10px;
-            padding: 20px;
             color: map-get($colors,first );
             background-color: map-get($colors,second );
             border-radius: 6px;
@@ -15,9 +14,25 @@
                 flex-direction: column;
                 justify-content: space-evenly;
                 height: 710px;
+                form{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    input{
+                        width: 190px;
+                    }
+                    textarea{
+                        width: 100%;
+                    }
+                    .enviar{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
                 .map{
                     width: 100%;
-                    border-radius: 6px;
+                    height: 267px;
+                    border-bottom-left-radius: 6px;
+                    border-bottom-right-radius: 6px;
                 }
              }
          }
@@ -27,24 +42,47 @@
 
 /* VISTA DESKTOP CONTACTO PAGE  */
 @media only screen and (min-width: 1024px) {
+    .d-flex{
+        display: flex;
+    }
+    .justify-c-c{
+        justify-content: center;
+    }
+    .p-l40{
+        padding-left: 40px;
+    }
     .gridFormularioUbicacion{
+        margin: auto;
+        width: 70%;
         .boxFormulario{
-            margin: 10px 30px 10px 30px;
-            padding: 20px;
             color: #00c2cb;
-            background-color: map-get($colors,second );
+            background-color: #313e50;
             border-radius: 6px;
-            border: 2px solid map-get($colors,first );
-            width: 80%;
+            border: 2px solid #00c2cb;
+            width: 100%;
             box-shadow: 0 1px 8px 0;
+            height: 380px;
             .flexFormulario{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
+                padding-left: 60px;
+                div{
+                    padding-bottom: 10px;
+                    input{
+                        width: 180px;
+                    }
+                    textarea{
+                        width: 405px;
+                    }
+                }
             }
              .map{
-                border-radius: 6px;
+                width: 450px;
+                height: 380px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
             }
         }
     }

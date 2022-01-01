@@ -1,6 +1,6 @@
 /* VISTA MOBILE VEHÍCULOS PAGE  */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
-    /* BOXCAR MOBILE VEHÍCULOS PAGE */
+    /* BOX CAR MOBILE VEHÍCULOS PAGE */
     .flexBoxCar{
         display: flex;
         flex-direction: column;
@@ -59,13 +59,23 @@
         font-size: 15px;
         border-radius: 6px;
     }
-    /* FIN BOXCAR MOBILE VEHÍCULOS PAGE */
+    /* FIN BOX CAR MOBILE VEHÍCULOS PAGE */
+    /* TEXTO INFORMATIVO */
+    .gridTextInformativo{
+        display: flex;
+        justify-content: center;
+        .franquicia{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+    /* FIN TEXTO INFORMATIVO */
 }
 /* FIN VISTA MOBILE VEHÍCULOS PAGE  */
 
 /* VISTA DESKTOP VEHÍCULOS PAGE */
 @media only screen and (min-width: 1024px) {
-    /* BOXCAR DESKTOP VEHÍCULOS PAGE */
+    /* BOX CAR DESKTOP VEHÍCULOS PAGE */
     .flexBoxCar{
         display: flex;
         flex-direction: column;
@@ -134,6 +144,12 @@
             }     
         }
     }
-    /* FIN BOXCAR DESKTOP VEHÍCULOS PAGE */
+    /* FIN BOX CAR DESKTOP VEHÍCULOS PAGE */
+    /* TEXTO INFORMATIVO */
+    .gridTextInformativo{
+        display: flex;
+        justify-content: center;
+    }
+    /* FIN TEXTO INFORMATIVO */
 }
 /* FIN VISTA DESKTOP VEHÍCULOS PAGE */
