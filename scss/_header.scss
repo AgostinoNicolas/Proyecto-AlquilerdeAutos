@@ -1,4 +1,4 @@
-/* VISTA HEADER MOBILE */
+/* ------------- VISTA HEADER MOBILE ------------- */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     /* HEADER MOBILE */
     li{
@@ -55,7 +55,10 @@
     }
     /* FIN BARRA DE LLAMADAS MOBILE */
 }
-/* VISTA HEADER DESKTOP */
+/* ------------- FIN VISTA MOBILE ------------- */
+
+
+/* ------------- VISTA HEADER DESKTOP ------------- */
 @media only screen and (min-width: 1024px) {
     /* HEADER DESKTOP */
     li{
@@ -105,22 +108,31 @@
         .barText{
             display: flex;
             justify-content: end;
-            font-size: 13px;
+            font-size: 12px;
             color: map-get($colors,second );
             margin: 0px 10px 0px 0px;
             align-items: center;
-            padding: 5px 0px 0px 0px;
-            height: 12px;
-            a{
-                text-decoration: none;  
-                margin-left: 10px;
+            height: 20px;
+            .btn-wsp-bar{
+                height: 18px;
+                width: 18px;
+                background-color: #20d466;
+                line-height: 60px;
+                border-radius: 30px;
+                margin-left: 5px;
+                margin-bottom: 2px;
+                line-height: 30px;
+                text-align: center;
                 .fa-whatsapp{
-                    font-size: 20px;
-                    color: map-get($colors,second );
+                    position: relative;
+                    top: -5px;
+                    font-size: 14px;
+                    color: #fff;
                 }
-            } 
+            }
+             
         }    
     }        
      /* FIN BARRA DE LLAMADAS INDEX PAGE DESKTOP */
 }
-/* FIN VISTA DESKTOP */
+/* ------------- FIN VISTA DESKTOP ------------- */

@@ -1,4 +1,4 @@
-/* VISTA MOBILE  */
+/* ------------- VISTA MOBILE -------------  */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     /* GRID CONTAINER INDEX PAGE MOBILE */
     main{
@@ -97,7 +97,7 @@
         "gridFooter";
 
         grid-template-columns: 100%;
-        grid-template-rows: 290px 10px 80px 930px 210px 360px 1fr;
+        grid-template-rows: 290px 10px 80px 930px 210px 170px 1fr;
         .gridVehiculosPage{
             header{
                 grid-area: header;

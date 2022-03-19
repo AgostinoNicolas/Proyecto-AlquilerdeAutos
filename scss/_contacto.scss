@@ -1,4 +1,4 @@
-/* VISTA MOBILE CONTACTO PAGE  */
+/* ------------- VISTA MOBILE CONTACTO PAGE ------------- */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     .gridFormularioUbicacion{
         .boxFormulario{
@@ -6,8 +6,6 @@
             color: map-get($colors,first );
             background-color: map-get($colors,second );
             border-radius: 6px;
-            border: 2px solid map-get($colors,first );
-            box-shadow: 0 1px 8px 0;
             height: 680px;
             .flexFormulario{
                 display: flex;
@@ -22,6 +20,24 @@
                     }
                     textarea{
                         width: 100%;
+                    }
+                    .btn-enviar{
+                        display: flex;
+                        justify-content: center;
+                        background-color: map-get($colors,first );
+                        color: map-get($colors,second );
+                        border-radius: 6px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        font-family: "poppinsM";
+                        padding: 5px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: map-get($colors, fifth);
+                            color: map-get($colors,first );
+                            transform: scale(1.05,1.05);
+                            transition: 0.6s;
+                        }   
                     }
                     .enviar{
                         display: flex;
@@ -38,9 +54,9 @@
          }
     }
 }
-/* FIN VISTA MOBILE CONTACTO PAGE  */
+/* ------------- FIN VISTA MOBILE CONTACTO PAGE ------------- */
 
-/* VISTA DESKTOP CONTACTO PAGE  */
+/* ------------- VISTA DESKTOP CONTACTO PAGE ------------- */
 @media only screen and (min-width: 1024px) {
     .d-flex{
         display: flex;
@@ -58,9 +74,7 @@
             color: #00c2cb;
             background-color: #313e50;
             border-radius: 6px;
-            border: 2px solid #00c2cb;
             width: 100%;
-            box-shadow: 0 1px 8px 0;
             height: 380px;
             .flexFormulario{
                 display: flex;
@@ -75,6 +89,24 @@
                     }
                     textarea{
                         width: 405px;
+                    }
+                    .btn-enviar{
+                        display: flex;
+                        justify-content: center;
+                        background-color: map-get($colors,first );
+                        color: map-get($colors,second );
+                        border-radius: 6px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        font-family: "poppinsM";
+                        padding: 5px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: map-get($colors, fifth);
+                            color: map-get($colors,first );
+                            transform: scale(1.05,1.05);
+                            transition: 0.6s;
+                        }
                     }
                 }
             }

@@ -3,7 +3,8 @@ $colors:(
     first:#00c2cb,
     second:#313e50,
     third:white,
-    fourth:#4a4a4a
+    fourth:#4a4a4a,
+    fifth: #4d678a,
     );
 
  @mixin marginLR($margin-left,$margin-right){
@@ -14,6 +15,7 @@ $colors:(
 *{
     margin: 0%;
     padding: 0%;
+    scroll-behavior: smooth;
 }
 body{
     background:#e5e5e5;
@@ -22,6 +24,7 @@ body{
     font-family: "poppins";
     font-weight: 500;
 }
+/* FUENTES */
 @font-face {
     font-family: "poppins";
     src: url(../assets/font/Poppins-Light.ttf);
@@ -34,7 +37,7 @@ body{
     font-family: "poppinsM";
     src: url(../assets/font/Poppins-Medium.ttf);
 }
-/* BOTTOM WHATSAPP */
+/* BTN WHATSAPP */
 .btn-wsp{
     position: fixed;
     width: 55px;
@@ -52,7 +55,46 @@ body{
         font-size: 35px; 
     }
 }
-
+/* BTN SUBIR */
+.btn-subir{
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    bottom: 85px;
+    right: 31px;
+    background-color: map-get($colors, fifth );
+    color: map-get($colors,first);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 15px;
+    z-index: 50;
+}
+/* ESTILO FORM INPUT SELECT TEXTAREA */
+form{
+    border-radius: 6px;
+    input{
+        caret-color: map-get($colors,first);
+        border-radius: 6px;
+        border-style: none;
+        padding: 1px;
+        margin-top: 5px;
+        cursor: pointer;
+    }    
+    select{
+        border-style: none;
+        border-radius: 6px !important;
+        padding: 2px;
+        margin-top: 5px;
+        cursor: pointer;   
+    }
+    textarea{
+        border-radius: 6px;
+        border-style: none;
+        margin-top: 5px;
+    }
+}
+/* TEXTO */
 .textCenter{
     text-align: center;
 }

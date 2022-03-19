@@ -1,10 +1,14 @@
-/* VISTA MOBILE FOOTER */
+/* ------------- VISTA MOBILE FOOTER ------------- */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
     /*  COTIZAR AHORA MOBILE  */
     .boxCotizarAhora{
         padding: 20px;
-        background-color: map-get($colors,first );
+        background-color: map-get($colors,second );
         box-shadow: 0 1px 8px 0;
+        color: #a3a1a1;
+        .subtitulo{
+            color: map-get($colors, first);
+        }
         .buttonCotizarAhora{
             display: flex;
             flex-wrap: wrap;
@@ -12,13 +16,15 @@
             color: map-get($colors,first );
             margin-right: 30px;
             text-transform: uppercase;
+            font-weight: bold;
+            font-family: "poppinsM";
             a{
                 font-size: 10px;
-                background:map-get($colors,second );
+                background:map-get($colors,first );
                 margin: 5px;
                 padding: 5px;
                 border-radius: 6px;
-                color: map-get($colors,first );
+                color: map-get($colors,second );
                 text-decoration: none;
                 margin-left: 5px;
             }
@@ -114,31 +120,39 @@
     }
     /* FIN MOBILE FOOTER */
 }
-/* FIN VISTA MOBILE FOOTER */
-/* VISTA DESKTOP FOOTER */
+/* ------------- FIN VISTA MOBILE FOOTER ------------- */
+
+
+/* ------------- VISTA DESKTOP FOOTER ------------- */
 @media only screen and (min-width: 1024px) {
     /*  COTIZAR AHORA DESKTOP  */
     .boxCotizarAhora{
         padding: 20px;
-        background-color:map-get($colors,first );
+        background-color:map-get($colors,second );
         box-shadow: 0 1px 8px 0;
+        color: #a3a1a1;
+        .subtitulo{
+            color: map-get($colors, first);
+        }
         .buttonCotizarAhora{
             display: flex;
             flex-wrap: wrap;
             justify-content: end;
             margin-right: 50px;
             text-transform: uppercase;
+            font-weight: bold;
+            font-family: "poppinsM";
             a{
                 text-decoration: none;
                 font-size: 12px;
-                background:map-get($colors,second );
-                color: map-get($colors,first );
+                background:map-get($colors,first );
+                color: map-get($colors, second );
                 margin: 5px;
                 padding: 5px;
                 border-radius: 6px;
-                box-shadow: 0 1px 8px 0;
                 &:hover{
-                    color: map-get($colors,third );
+                    background-color: map-get($colors, fifth);
+                    color: map-get($colors,first );
                     transform: scale(1.05,1.05);
                     transition: 0.6s;
                 }
@@ -163,7 +177,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         .footerLogo{
             display: flex;
             justify-content: center;
@@ -219,4 +233,4 @@
     }
     /* FIN DESKTOP FOOTER */
 }
-/* FIN VISTA DESKTOP FOOTER */    
+/* ------------- FIN VISTA DESKTOP FOOTER ------------- */    
