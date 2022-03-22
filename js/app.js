@@ -1,7 +1,11 @@
 
+//CONTENEDOR VEHICULOS
 const contenedorVehiculos = document.getElementById("contenedorVehiculos");
+//CONTENEDOR SELECT VEHICULO
 
 
+
+//FUNCION MOSTRAR VEHICULOS
 function mostrarVehiculos (vehiculos){
     for(const vehiculo of vehiculos){
         const {marca, modelo, img} = vehiculo
