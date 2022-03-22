@@ -203,7 +203,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridBoxCar" "gridTextInformativo" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 290px 10px 80px 930px 210px 170px 1fr; }
+    grid-template-rows: 290px 10px 100px 5400px 210px 170px 1fr; }
     .gridVehiculoPage .gridVehiculosPage header {
       grid-area: header; }
     .gridVehiculoPage .gridVehiculosPage .gridHeaderBar {
@@ -307,7 +307,7 @@ h2, h3, h4 {
     display: grid;
     grid-template-areas: "header" "gridHeaderBar" "gridEncabezado" "gridBoxCar" "gridTextInformativo" "gridCotizarAhora" "gridFooter";
     grid-template-columns: 100%;
-    grid-template-rows: 110px 20px 70px 700px 90px 110px 1fr; }
+    grid-template-rows: 110px 20px 70px 3820px 90px 110px 1fr; }
     .gridVehiculoPage .gridVehiculoPage header {
       grid-area: header; }
     .gridVehiculoPage .gridVehiculoPage .gridHeaderBar {
@@ -562,9 +562,7 @@ h2, h3, h4 {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 16em;
-    border-top: 1px solid #00c2cb;
-    border-bottom: 1px solid #00c2cb; }
+    height: 16em; }
   /* FIN PARALLAX MOBILE INDEX PAGE */
   /* SOBRE NOSOTROS MOBILE INDEX PAGE */
   .flexSobreNosotros {
@@ -684,9 +682,7 @@ h2, h3, h4 {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 25em;
-    border-top: 1px solid #00c2cb;
-    border-bottom: 1px solid #00c2cb; }
+    height: 25em; }
   /* FIN PARALLAX DESKTOP INDEX PAGE */
   /* SOBRE NOSOTROS DESKTOP INDEX PAGE */
   .flexSobreNosotros {
